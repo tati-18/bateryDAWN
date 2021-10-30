@@ -14,7 +14,7 @@ h3,
 h4,
 h5, 
 h6 {
-    color: #202C45;
+    color: #d7dadf;
 }
 
 a {
@@ -531,11 +531,16 @@ a.text-decoration-none{
     margin-left: 0;
 }
 
+.about .section-header.text-left {
+    background-color:#202C45 ;}
+
+
 .about .about-img img {
     width: 100%;
     border-radius: 5px;
     margin-bottom: 30px;
 }
+
 
 .about .about-content {
     margin-bottom: 30px;
@@ -565,6 +570,8 @@ a.text-decoration-none{
     position: relative;
     width: 100%;
     padding: 45px 0 0 0;
+    background-color: #202C45;
+    color: #eeeeee;
 }
 
 .service .service-item {
