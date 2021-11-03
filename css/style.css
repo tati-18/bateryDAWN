@@ -501,6 +501,9 @@ a.text-decoration-none{
 .bi-cart3{
     color:#1e1e1e;
 }
+.service .container .row{
+    color: #dddddd;
+}
 .button {
     position: relative;
     border: none;
