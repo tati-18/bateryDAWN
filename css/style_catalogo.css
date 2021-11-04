@@ -277,6 +277,21 @@ div.ml-auto {
 
 /**********************************/
 
+#totalItems {
+    position: absolute;
+    top: 19px;
+    right: -12px;
+    height: 21px;
+    width: 23px;
+    line-height: 21px;
+    background-color: #E81C2E;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 50%;
+}
+
 .nav-bar {
     position: relative;
     background: #202C45;
@@ -682,12 +697,11 @@ ul {
     transition: 0s
 }
 
-div.car-banner>img {
+div.baterie-banner>img {
     width: 23%
 }
 
-.on-grids .car-item,
-.recent-car-content .car-item {
+.recent-baterie-content .baterie-item {
     margin-bottom: 30px;
     border-radius: 5px;
     -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
@@ -698,18 +712,15 @@ div.car-banner>img {
     transition: all 0.3s
 }
 
-.on-grids .car-item:hover,
-.recent-car-content .car-item:hover {
+.recent-baterie-content .baterie-item:hover {
     border-bottom: 3px solid #2959ad
 }
 
-.on-grids .car-item .thumb-content,
-.recent-car-content .car-item .thumb-content {
+.recent-baterie-content .baterie-item .thumb-content {
     position: relative
 }
 
-.on-grids .car-item .thumb-content .car-banner,
-.recent-car-content .car-item .thumb-content .car-banner {
+.recent-baterie-content .baterie-item .thumb-content .baterie-banner {
     position: absolute;
     margin-top: 0px;
     left: 20px;
@@ -717,8 +728,7 @@ div.car-banner>img {
     margin-right: 26px
 }
 
-.on-grids .car-item .thumb-content .car-banner a,
-.recent-car-content .car-item .thumb-content .car-banner a {
+.recent-baterie-content .baterie-item .thumb-content .baterie-banner a {
     background-color: #202C45;
     border-radius: 3px;
     color: white;
@@ -732,8 +742,7 @@ div.car-banner>img {
     display: inline-block
 }
 
-.on-grids .car-item .thumb-content .thumb-inner img,
-.recent-car-content .car-item .thumb-content .thumb-inner img {
+.recent-baterie-content .baterie-item .thumb-content .thumb-inner img {
     -webkit-transition: all 0.5s;
     -o-transition: all 0.5s;
     transition: all 0.5s;
@@ -745,35 +754,30 @@ div.car-banner>img {
     background-size: cover
 }
 
-.on-grids .car-item .down-content,
-.recent-car-content .car-item .down-content {
+.recent-baterie-content .baterie-item .down-content {
     padding: 20px;
     text-align: left
 }
 
-.on-grids .car-item .down-content h4,
-.recent-car-content .car-item .down-content h4 {
+.recent-baterie-content .baterie-item .down-content h4 {
     margin-top: 15px;
     font-size: 17px;
     font-weight: 700;
     color: #1e1e1e
 }
 
-.on-grids .car-item .down-content span,
-.recent-car-content .car-item .down-content span {
+.recent-baterie-content .baterie-item .down-content span {
     font-size: 15px;
     font-weight: 900;
     color: #2959ad;
     margin-bottom: 0px
 }
 
-.on-grids .car-item .down-content p,
-.recent-car-content .car-item .down-content p {
+.recent-baterie-content .baterie-item .down-content p {
     margin: 10px 0px 20px 0px
 }
 
-.on-grids .car-item .down-content ul,
-.recent-car-content .car-item .down-content ul {
+.recent-baterie-content .baterie-item .down-content ul {
     padding: 0;
     margin: 0;
     width: 100%;
@@ -781,8 +785,7 @@ div.car-banner>img {
     list-style: none
 }
 
-.on-grids .car-item .down-content ul li,
-.recent-car-content .car-item .down-content ul li {
+.recent-baterie-content .baterie-item .down-content ul li {
     display: inline-block;
     width: 23.5%;
     text-align: center;
@@ -790,19 +793,16 @@ div.car-banner>img {
 }
 
 @media (max-width:991px) {
-    .on-grids .car-item .down-content ul li,
-    .recent-car-content .car-item .down-content ul li {
+    .recent-baterie-content .baterie-item .down-content ul li {
         width: 23%
     }
 }
 
-.on-grids .car-item .down-content ul li:last-child,
-.recent-car-content .car-item .down-content ul li:last-child {
+.recent-baterie-content .baterie-item .down-content ul li:last-child {
     border-right: none
 }
 
-.on-grids .car-item .down-content ul li .item,
-.recent-car-content .car-item .down-content ul li .item {
+.recent-baterie-content .baterie-item .down-content ul li .item {
     border-radius: 5px;
     background-color: #f7f7f7;
     padding: 10px 5px;
@@ -811,23 +811,19 @@ div.car-banner>img {
     transition: all 0.3s
 }
 
-.on-grids .car-item .down-content ul li .item:hover,
-.recent-car-content .car-item .down-content ul li .item:hover {
+.recent-baterie-content .baterie-item .down-content ul li .item:hover {
     background-color: #224286
 }
 
-.on-grids .car-item .down-content ul li .item:hover i,
-.recent-car-content .car-item .down-content ul li .item:hover i {
+.recent-baterie-content .baterie-item .down-content ul li .item:hover i {
     color: #1e1e1e
 }
 
-.on-grids .car-item .down-content ul li .item:hover p,
-.recent-car-content .car-item .down-content ul li .item:hover p {
+.recent-baterie-content .baterie-item .down-content ul li .item:hover p {
     color: #1e1e1e
 }
 
-.on-grids .car-item .down-content ul li .item i,
-.recent-car-content .car-item .down-content ul li .item i {
+.recent-baterie-content .baterie-item .down-content ul li .item i {
     font-size: 11px;
     text-transform: uppercase;
     width: 100%;
@@ -835,8 +831,7 @@ div.car-banner>img {
     float: left
 }
 
-.on-grids .car-item .down-content ul li .item p,
-.recent-car-content .car-item .down-content ul li .item p {
+.recent-baterie-content .baterie-item .down-content ul li .item p {
     margin-top: 0px;
     margin-bottom: 3px;
     font-size: 12px;

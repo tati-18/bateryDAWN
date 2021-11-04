@@ -68,6 +68,22 @@ div.ml-auto
 /**********************************/
 /*********** Nav Bar CSS **********/
 /**********************************/
+
+#totalItems {
+    position: absolute;
+    top: 19px;
+    right: -12px;
+    height: 21px;
+    width: 23px;
+    line-height: 21px;
+    background-color: #E81C2E;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 50%;
+}
+
 .nav-bar {
     position: relative;
     background: #202C45;
