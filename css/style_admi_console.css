@@ -1,0 +1,41 @@
+.nav-menu {
+    justify-content: space-around;
+}
+
+.content{
+    text-align: justify;
+    
+}
+
+form{
+    margin: 2rem auto;
+}
+.logo{
+    max-width: 15%;
+}
+.nav-admi{
+    list-style:none;
+    border-radius: 5px;
+    margin: 2rem auto;
+    background-color: #202C45;
+}
+
+.nav-admi, .menu-admi{
+    text-align: center;
+}
+
+h2{
+    color: #202C45;
+    font-weight: bold;
+}
+
+.menu-admi, .content{
+    margin-top: 2rem;
+}
+.btn-menu-admi{
+    width: 80%;
+    height: 20%;
+    color: #fff;
+    padding: 2rem;
+}
+
