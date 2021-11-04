@@ -74,7 +74,7 @@ h6 {
 }
 
 a {
-    color: #202C45;
+    color: #212529;
     transition: .3s;
 }
 
@@ -99,7 +99,7 @@ div.ml-auto {
     background: #E81C2E;
     border: none;
     border-radius: 60px;
-    box-shadow: inset 0 0 0 0 #202C45;
+    box-shadow: inset 0 0 0 0 #212529;
     transition: ease-out 0.5s;
     -webkit-transition: ease-out 0.5s;
     -moz-transition: ease-out 0.5s;
@@ -107,8 +107,8 @@ div.ml-auto {
 
 .btn.btn-custom:hover {
     color: #E81C2E;
-    background: #202C45;
-    box-shadow: inset 200px 0 0 0 #202C45;
+    background: #212529;
+    box-shadow: inset 200px 0 0 0 #212529;
 }
 
 .btn:focus,
@@ -214,7 +214,7 @@ div.ml-auto {
 }
 
 .back-to-top:hover {
-    background: #202C45;
+    background: #212529;
 }
 
 
@@ -250,7 +250,7 @@ div.ml-auto {
 }
 
 .top-bar .logo h1 span {
-    color: #202C45;
+    color: #212529;
 }
 
 .top-bar .logo img {
@@ -270,7 +270,7 @@ div.ml-auto {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #202C45;
+    background: #212529;
     border-radius: 40px;
 }
 
@@ -328,7 +328,7 @@ div.ml-auto {
 
 .nav-bar {
     position: relative;
-    background: #202C45;
+    background: #212529;
 }
 
 a.text-decoration-none {
@@ -346,7 +346,7 @@ a.text-decoration-none {
 
 .nav-bar .navbar {
     padding: 20px 0;
-    background: #202C45 !important;
+    background: #212529 !important;
     transition: .3s;
 }
 
@@ -354,6 +354,10 @@ a.text-decoration-none {
     padding: 5px 0;
 }
 
+.nav-bar .nav-link{
+    color: white;
+
+}
 .navbar-dark .navbar-nav .nav-link,
 .navbar-dark .navbar-nav .nav-link:focus,
 .navbar-dark .navbar-nav .nav-link:hover,
@@ -377,7 +381,7 @@ a.text-decoration-none {
 }
 
 .nav-bar .btn.btn-custom {
-    color: #202C45;
+    color: #212529;
     background: #ffffff;
     box-shadow: inset 0 0 0 0 #dc3545;
 }
@@ -544,7 +548,7 @@ a.text-decoration-none {
 }
 
 .about .section-header h2 {
-    color: #202C45;
+    color: #212529;
 }
 
 .about .about-img img {
@@ -582,11 +586,11 @@ a.text-decoration-none {
 
 /*******************************/
 
-.service {
-    background-color: #202C45;
+.marcas {
+    background-color: #212529;
 }
 
-.service .container .row {
+.marcas .container .row {
     color: #dddddd;
 }
 
@@ -674,9 +678,10 @@ section.top-slider-features .slider-top-features .car-item .thumb-content .thumb
     background-size: cover
 }
 
-.service .container .section-header h1,
+.marcas .container .section-header h1,
 h4 {
     color: #ffffff;
+    text-align: center;
 }
 
 section.top-slider-features .slider-top-features .car-item .down-content {
@@ -800,7 +805,7 @@ section.top-slider-features .slider-top-features .owl-dots {
 
 .on-grids .car-item .thumb-content .car-banner a,
 .recent-cars .car-item .thumb-content .car-banner a {
-    background-color: #202C45;
+    background-color: #212529;
     border-radius: 3px;
     color: white;
     font-size: 13px;
@@ -859,7 +864,7 @@ section.top-slider-features .slider-top-features .owl-dots {
     margin: 0;
     font-size: 60px;
     line-height: 60px;
-    background-image: linear-gradient(#E81C2E, #202C45);
+    background-image: linear-gradient(#E81C2E, #212529);
     -webkit-text-fill-color: transparent;
     transition: .5s;
 }
@@ -1390,7 +1395,7 @@ section.top-slider-features .slider-top-features .owl-dots {
     position: relative;
     width: 100%;
     padding: 25px 0 15px 0;
-    background-color: #202C45;
+    background-color: #212529;
 }
 
 .team .team-item {
@@ -1422,7 +1427,7 @@ section.top-slider-features .slider-top-features .owl-dots {
     width: 100%;
     padding: 35px 30px 30px 30px;
     text-align: center;
-    background: #202C45;
+    background: #212529;
     border-radius: 0 0 5px 5px;
     transition: .5s;
 }
@@ -1463,7 +1468,7 @@ section.top-slider-features .slider-top-features .owl-dots {
     text-align: center;
     font-size: 16px;
     color: #ffffff;
-    background: #202C45;
+    background: #212529;
     border-radius: 40px;
     transition: .5s;
 }
@@ -1473,7 +1478,7 @@ section.top-slider-features .slider-top-features .owl-dots {
 }
 
 .team .team-social a:hover {
-    color: #202C45;
+    color: #212529;
 }
 
 
@@ -1490,7 +1495,10 @@ div.ContServicio {
 }
 
 .ContServicio .container div.section-header h2 {
-    color: #202C45;
+    color: #212529;
+}
+.ContServicio .container div.row h3 {
+    color: #1A6692;
 }
 
 .colored-line-small-center {
@@ -1532,7 +1540,7 @@ div.ContServicio {
     margin-bottom: 45px;
     padding: 35px 30px 10px 30px;
     border-radius: 5px;
-    background: #202C45;
+    background: #212529;
 }
 
 .contact .contact-info h2 {
@@ -1561,7 +1569,7 @@ div.ContServicio {
 
 .contact .contact-info-icon i {
     margin: 0;
-    color: #202C45;
+    color: #212529;
     font-size: 16px;
 }
 
@@ -1593,14 +1601,14 @@ div.ContServicio {
 .contact .contact-form input {
     padding: 15px;
     border-radius: 5px;
-    border: 1px solid #202C45;
+    border: 1px solid #212529;
 }
 
 .contact .contact-form textarea {
     height: 125px;
     padding: 8px 15px;
     border-radius: 5px;
-    border: 1px solid #202C45;
+    border: 1px solid #212529;
 }
 
 .contact .help-block ul {
@@ -1652,8 +1660,8 @@ div.ContServicio {
     padding: 7px 15px;
     font-size: 14px;
     font-weight: 500;
-    color: #202C45;
-    border: 1px solid #202C45;
+    color: #212529;
+    border: 1px solid #212529;
     border-radius: 5px;
 }
 
@@ -1665,7 +1673,7 @@ div.ContServicio {
 
 .single .single-bio {
     padding: 30px;
-    background: #202C45;
+    background: #212529;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1714,7 +1722,7 @@ div.ContServicio {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #202C45;
+    color: #212529;
     background: #ffffff;
     border-radius: 40px;
     margin-right: 5px;
@@ -1818,7 +1826,7 @@ div.ContServicio {
     align-items: center;
     justify-content: center;
     color: #ffffff;
-    background: #202C45;
+    background: #212529;
     border-radius: 5px;
     font-size: 16px;
     transition: .3s;
@@ -1886,7 +1894,7 @@ div.ContServicio {
     padding: 3px 10px;
     font-size: 14px;
     font-weight: 500;
-    color: #202C45;
+    color: #212529;
     background: #dddddd;
     border-radius: 5px;
 }
@@ -1996,7 +2004,7 @@ div.ContServicio {
     height: 40px;
     padding: 0;
     font-size: 25px;
-    color: #202C45;
+    color: #212529;
     background: none;
     border-radius: 0;
     border: none;
@@ -2022,7 +2030,7 @@ div.ContServicio {
 
 .sidebar .tab-post .nav.nav-pills .nav-link {
     color: #ffffff;
-    background: #202C45;
+    background: #212529;
     border-radius: 0;
 }
 
@@ -2091,8 +2099,8 @@ div.ContServicio {
     padding: 7px 15px;
     font-size: 14px;
     font-weight: 400;
-    color: #202C45;
-    border: 1px solid #202C45;
+    color: #212529;
+    border: 1px solid #212529;
     border-radius: 5px;
 }
 
@@ -2131,7 +2139,7 @@ div.ContServicio {
     position: relative;
     margin-top: 45px;
     padding-top: 90px;
-    background: #202C45;
+    background: #212529;
 }
 
 .footer .footer-contact,
@@ -2188,7 +2196,7 @@ div.ContServicio {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #202C45;
+    color: #212529;
     background: #ffffff;
     border-radius: 40px;
     margin-right: 5px;
@@ -2226,7 +2234,7 @@ div.ContServicio {
 
 .footer .footer-newsletter .btn.btn-custom {
     width: 100%;
-    color: #202C45;
+    color: #212529;
     background: #ffffff;
     box-shadow: inset 0 0 0 0 #E81C2E;
 }
