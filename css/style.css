@@ -1,25 +1,62 @@
 /*******************************/
+
+
 /********* KeyFroms ************/
+
+
 /*******************************/
 
 @-webkit-keyframes leweb_fade_move_down {
-    0%   { -webkit-transform:translate(0,-20px); opacity: 0;  }
-    50%  { opacity: 1;  }
-    100% { -webkit-transform:translate(0,20px); opacity: 0; }
-  }
-  @-moz-keyframes leweb_fade_move_down {
-    0%   { -moz-transform:translate(0,-20px); opacity: 0;  }
-    50%  { opacity: 1;  }
-    100% { -moz-transform:translate(0,20px); opacity: 0; }
-  }
-  @keyframes leweb_fade_move_down {
-    0%   { transform:translate(0,-20px); opacity: 0;  }
-    50%  { opacity: 1;  }
-    100% { transform:translate(0,20px); opacity: 0; }
-  }
+    0% {
+        -webkit-transform: translate(0, -20px);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: translate(0, 20px);
+        opacity: 0;
+    }
+}
+
+@-moz-keyframes leweb_fade_move_down {
+    0% {
+        -moz-transform: translate(0, -20px);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        -moz-transform: translate(0, 20px);
+        opacity: 0;
+    }
+}
+
+@keyframes leweb_fade_move_down {
+    0% {
+        transform: translate(0, -20px);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        transform: translate(0, 20px);
+        opacity: 0;
+    }
+}
+
+
 /*******************************/
+
+
 /********* General CSS *********/
+
+
 /*******************************/
+
 body {
     color: #444444;
     font-weight: 400;
@@ -28,10 +65,10 @@ body {
 }
 
 h1,
-h2, 
-h3, 
+h2,
+h3,
 h4,
-h5, 
+h5,
 h6 {
     color: #d7dadf;
 }
@@ -49,12 +86,13 @@ a:focus {
     text-decoration: none;
 }
 
-div.ml-auto
-{color: #E81C2E;}
+div.ml-auto {
+    color: #E81C2E;
+}
 
 .btn.btn-custom {
     padding: 10px 30px 12px 30px;
-    text-align: center; 
+    text-align: center;
     font-size: 16px;
     font-weight: 500;
     color: #ffffff;
@@ -82,16 +120,23 @@ div.ml-auto
     max-width: 1366px;
 }
 
-[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
-[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+[class^="flaticon-"]:before,
+[class*=" flaticon-"]:before,
+[class^="flaticon-"]:after,
+[class*=" flaticon-"]:after {
     font-size: inherit;
     margin-left: 0;
 }
 
 
 /**********************************/
+
+
 /****** Loader & Back to Top ******/
+
+
 /**********************************/
+
 #loader {
     position: fixed;
     top: 0;
@@ -130,13 +175,21 @@ div.ml-auto
 }
 
 @-webkit-keyframes spin {
-    0% { -webkit-transform: rotate(0deg); }
-    100% { -webkit-transform: rotate(360deg); }
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
 }
 
 @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 .back-to-top {
@@ -166,8 +219,13 @@ div.ml-auto
 
 
 /**********************************/
+
+
 /********** Top Bar CSS ***********/
+
+
 /**********************************/
+
 .top-bar {
     position: relative;
     height: 75px;
@@ -246,14 +304,35 @@ div.ml-auto
 
 
 /**********************************/
+
+
 /*********** Nav Bar CSS **********/
+
+
 /**********************************/
+
+#totalItems {
+    position: absolute;
+    top: 19px;
+    right: -12px;
+    height: 21px;
+    width: 23px;
+    line-height: 21px;
+    background-color: #E81C2E;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 50%;
+}
+
 .nav-bar {
     position: relative;
     background: #202C45;
 }
-a.text-decoration-none{
-    color:#ffffff
+
+a.text-decoration-none {
+    color: #ffffff
 }
 
 .nav-bar.nav-sticky {
@@ -305,7 +384,7 @@ a.text-decoration-none{
 
 .nav-bar .btn:hover {
     color: #ffffff;
-    background:  #DC3536;
+    background: #DC3536;
     box-shadow: inset 200px 0 0 0 #DC3536;
 }
 
@@ -322,11 +401,9 @@ a.text-decoration-none{
     .navbar-dark .navbar-nav .nav-link.active {
         padding: 5px 0;
     }
-    
     .nav-bar .dropdown-menu {
         box-shadow: none;
     }
-    
     .nav-bar .btn {
         display: none;
     }
@@ -334,12 +411,18 @@ a.text-decoration-none{
 
 
 /*******************************/
+
+
 /********** Hero CSS ***********/
+
+
 /*******************************/
-.carousel-item img{
+
+.carousel-item img {
     height: 630px;
     filter: brightness(50%);
 }
+
 .carousel-item .carousel-text {
     position: absolute;
     width: 100%;
@@ -352,6 +435,7 @@ a.text-decoration-none{
     text-align: center;
     flex-direction: column;
 }
+
 .carousel-item .carousel-text h3 {
     color: #E81C2E;
     font-size: 20px;
@@ -361,7 +445,6 @@ a.text-decoration-none{
     margin-bottom: 0px;
 }
 
-
 .carousel-item .carousel-text h1 {
     color: #ffffff;
     font-size: 90px;
@@ -369,32 +452,33 @@ a.text-decoration-none{
     margin-bottom: 20px;
     text-transform: capitalize;
 }
+
 .carousel-item .carousel-text p {
     max-width: 500px;
     color: #ffffff;
     font-size: 18px;
     margin-bottom: 40px;
 }
+
 .carousel-item .carousel-text .btn.btn-custom {
     padding: 20px 45px 22px 45px;
     color: #ffffff;
 }
-.carousel-item .carousel-text  .btn.btn-custom:hover {
+
+.carousel-item .carousel-text .btn.btn-custom:hover {
     color: #E81C2E;
 }
+
 @media (max-width: 991.98px) {
     .carousel .carousel-text h3 {
         margin-bottom: 5px;
     }
-    
     .carousel .carousel-text h1 {
         font-size: 60px;
     }
-    
     .carousel .carousel-text p {
         font-size: 16px;
     }
-    
     .carousel .carousel-text .btn {
         padding: 12px 30px;
         font-size: 15px;
@@ -408,11 +492,9 @@ a.text-decoration-none{
         letter-spacing: 2px;
         margin-bottom: 15px;
     }
-    
     .carousel .carousel-text h1 {
         font-size: 45px;
     }
-    
     .carousel .carousel-text .btn {
         padding: 10px 25px;
         font-size: 15px;
@@ -426,17 +508,14 @@ a.text-decoration-none{
         letter-spacing: 1px;
         margin-bottom: 10px;
     }
-    
     .carousel .carousel-text h1 {
         font-size: 30px;
         margin-bottom: 15px;
     }
-    
     .carousel .carousel-text p {
         margin-bottom: 25px;
         padding: 0% 15%;
     }
-    
     .carousel .carousel-text .btn {
         padding: 8px 20px;
         font-size: 14px;
@@ -445,10 +524,14 @@ a.text-decoration-none{
 }
 
 
+/*******************************/
+
+
+/********** About CSS **********/
+
 
 /*******************************/
-/********** About CSS **********/
-/*******************************/
+
 .about {
     position: relative;
     width: 100%;
@@ -461,15 +544,14 @@ a.text-decoration-none{
 }
 
 .about .section-header h2 {
-    color:#202C45 ;}
-
+    color: #202C45;
+}
 
 .about .about-img img {
     width: 100%;
     border-radius: 5px;
     margin-bottom: 30px;
 }
-
 
 .about .about-content {
     margin-bottom: 30px;
@@ -493,17 +575,21 @@ a.text-decoration-none{
 
 
 /*******************************/
+
+
 /********* Service CSS *********/
+
+
 /*******************************/
-.service{
+
+.service {
     background-color: #202C45;
 }
-.bi-cart3{
-    color:#1e1e1e;
-}
-.service .container .row{
+
+.service .container .row {
     color: #dddddd;
 }
+
 .button {
     position: relative;
     border: none;
@@ -514,9 +600,9 @@ a.text-decoration-none{
     text-decoration: none;
     overflow: hidden;
     cursor: pointer;
-  }
-  
-  .button:after {
+}
+
+.button:after {
     content: "";
     background: #727171;
     display: block;
@@ -527,14 +613,15 @@ a.text-decoration-none{
     margin-top: -120%;
     opacity: 0;
     transition: all 0.8s
-  }
-  
-  .button:active:after {
+}
+
+.button:active:after {
     padding: 0;
     margin: 0;
     opacity: 1;
     transition: 0s
-  }
+}
+
 img {
     vertical-align: middle;
     border-style: none;
@@ -543,8 +630,8 @@ img {
     color: #eeeeee;
 }
 
-div.car-banner > img{
-    width:23%
+div.car-banner>img {
+    width: 23%
 }
 
 section.top-slider-features .slider-top-features {
@@ -586,9 +673,10 @@ section.top-slider-features .slider-top-features .car-item .thumb-content .thumb
     overflow: hidden;
     background-size: cover
 }
-.service .container .section-header h1,h4{
-    color: #ffffff;
 
+.service .container .section-header h1,
+h4 {
+    color: #ffffff;
 }
 
 section.top-slider-features .slider-top-features .car-item .down-content {
@@ -1286,14 +1374,18 @@ section.top-slider-features .slider-top-features .owl-dots {
     color: #333333
 }
 
+
 /* 03.02. Car Items Ends */
 
 
-
-
 /*******************************/
+
+
 /*********** Team CSS **********/
+
+
 /*******************************/
+
 .team {
     position: relative;
     width: 100%;
@@ -1311,15 +1403,15 @@ section.top-slider-features .slider-top-features .owl-dots {
     border-radius: 5px 5px 0 0;
     overflow: hidden;
 }
-.team .container .section-header h2{
-  padding-bottom: 10px;
+
+.team .container .section-header h2 {
+    padding-bottom: 10px;
 }
 
 .team .team-img img {
     width: 100%;
     transition: .3s;
 }
-
 
 .team .team-item:hover img {
     transform: scale(1.1);
@@ -1386,36 +1478,49 @@ section.top-slider-features .slider-top-features .owl-dots {
 
 
 /***************************************/
+
+
 /******* ContenedorServicios CSS *******/
+
+
 /***************************************/
-  
-  div.ContServicio{
+
+div.ContServicio {
     padding: 20px 0px;
+}
 
-  }
-  .ContServicio .container div.section-header h2{
-      color: #202C45;
+.ContServicio .container div.section-header h2 {
+    color: #202C45;
+}
 
-  }
-  .colored-line-small-center {
-	background: #008ed6;
-	display: block;
-	margin: auto;
+.colored-line-small-center {
+    background: #008ed6;
+    display: block;
+    margin: auto;
     height: 1px;
     width: 25%;
     z-index: 1;
-	margin-bottom: 5px;
+    margin-bottom: 5px;
 }
- 
 
 
 /*******************************/
+
+
 /*********** Blog CSS **********/
-/*******************************/
+
 
 /*******************************/
-/********* Contact CSS *********/
+
+
 /*******************************/
+
+
+/********* Contact CSS *********/
+
+
+/*******************************/
+
 .contact {
     position: relative;
     width: 100%;
@@ -1428,7 +1533,6 @@ section.top-slider-features .slider-top-features .owl-dots {
     padding: 35px 30px 10px 30px;
     border-radius: 5px;
     background: #202C45;
-    
 }
 
 .contact .contact-info h2 {
@@ -1513,8 +1617,13 @@ section.top-slider-features .slider-top-features .owl-dots {
 
 
 /*******************************/
+
+
 /******* Single Post CSS *******/
+
+
 /*******************************/
+
 .single {
     position: relative;
     padding: 45px 0;
@@ -1824,8 +1933,13 @@ section.top-slider-features .slider-top-features .owl-dots {
 
 
 /**********************************/
+
+
 /*********** Sidebar CSS **********/
+
+
 /**********************************/
+
 .sidebar {
     position: relative;
     width: 100%;
@@ -1938,11 +2052,11 @@ section.top-slider-features .slider-top-features .owl-dots {
 }
 
 .sidebar .category-widget ul li {
-    margin: 0 0 12px 22px; 
+    margin: 0 0 12px 22px;
 }
 
 .sidebar .category-widget ul li:last-child {
-    margin-bottom: 0; 
+    margin-bottom: 0;
 }
 
 .sidebar .category-widget ul li a {
@@ -2006,8 +2120,13 @@ section.top-slider-features .slider-top-features .owl-dots {
 
 
 /*******************************/
+
+
 /********* Footer CSS **********/
+
+
 /*******************************/
+
 .footer {
     position: relative;
     margin-top: 45px;
