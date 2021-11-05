@@ -57,7 +57,7 @@ div.ml-auto {
 .btn.btn-custom:hover {
     color: #ffffff;
     background: #1E1E1E;
-    box-shadow: inset 200px 0 0 0 ##1E1E1E;
+    box-shadow: inset 200px 0 0 0 #1E1E1E;
 }
 
 .btn:focus,
@@ -79,7 +79,11 @@ div.ml-auto {
 
 
 /**********************************/
+
+
 /*********** Nav Bar CSS **********/
+
+
 /**********************************/
 
 #totalItems {
@@ -99,10 +103,11 @@ div.ml-auto {
 
 .nav-bar {
     position: relative;
-    background: #1E1E1E;
+    background: #212529;
 }
-a.text-decoration-none{
-    color:#ffffff
+
+a.text-decoration-none {
+    color: #ffffff
 }
 
 .nav-bar.nav-sticky {
@@ -116,12 +121,16 @@ a.text-decoration-none{
 
 .nav-bar .navbar {
     padding: 20px 0;
-    background: #1E1E1E !important;
+    background: #212529 !important;
     transition: .3s;
 }
 
 .nav-bar.nav-sticky .navbar {
     padding: 5px 0;
+}
+
+.nav-bar .nav-link {
+    color: white;
 }
 
 .navbar-dark .navbar-nav .nav-link,
@@ -147,14 +156,14 @@ a.text-decoration-none{
 }
 
 .nav-bar .btn.btn-custom {
-    color: #202C45;
+    color: #212529;
     background: #ffffff;
     box-shadow: inset 0 0 0 0 #dc3545;
 }
 
 .nav-bar .btn:hover {
     color: #ffffff;
-    background:  #DC3536;
+    background: #DC3536;
     box-shadow: inset 200px 0 0 0 #DC3536;
 }
 
@@ -171,15 +180,14 @@ a.text-decoration-none{
     .navbar-dark .navbar-nav .nav-link.active {
         padding: 5px 0;
     }
-    
     .nav-bar .dropdown-menu {
         box-shadow: none;
     }
-    
     .nav-bar .btn {
         display: none;
     }
 }
+
 
 /*******************************/
 
@@ -224,11 +232,10 @@ a.text-decoration-none{
 .section-heading h2 {
     font-size: 28px;
     font-weight: 400;
-    font: Poppins, sans-serif 28px ;
-    color: #1E1E1E ;
+    font: Poppins, sans-serif 28px;
+    color: #1E1E1E;
     margin-bottom: 15px;
 }
-
 
 
 /*******************************/
@@ -242,17 +249,18 @@ a.text-decoration-none{
 .ubicanos {
     margin-top: 100px;
 }
-.ubicanos h4{
+
+.ubicanos h4 {
     font-size: 20px;
     color: #1A6692;
     margin-bottom: 20px;
 }
 
-.ubicanos .right-content{
+.ubicanos .right-content {
     margin-left: 20px;
 }
 
-.ubicanos p{
+.ubicanos p {
     padding-bottom: 30px;
 }
 
@@ -326,8 +334,8 @@ div div h1 {
 .contact .section-header h2 {
     font-size: 28px;
     font-weight: 400;
-    font: Poppins, sans-serif 28px ;
-    color: #1E1E1E ;
+    font: Poppins, sans-serif 28px;
+    color: #1E1E1E;
     margin-bottom: 50px;
 }
 
@@ -404,6 +412,7 @@ div div h1 {
     border-radius: 5px;
 }
 
+
 /*******************************/
 
 
@@ -412,7 +421,7 @@ div div h1 {
 
 /*******************************/
 
-.services .container{
+.services .container {
     position: relative;
     align-items: center;
     justify-content: center;
@@ -422,7 +431,7 @@ div div h1 {
     border-radius: 10px;
 }
 
-.services h2{
+.services h2 {
     color: #1B1A17;
     text-align: end;
 }
@@ -433,7 +442,7 @@ div div h1 {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    padding: 100px ;
+    padding: 100px;
     margin-top: 100px;
 }
 
@@ -464,7 +473,6 @@ div div h1 {
     background-color: #ffffff;
     padding: 40px 30px;
     margin-bottom: 15px;
-
 }
 
 .services .service-item .down-content h4 {
@@ -494,6 +502,7 @@ a.filled-button:hover {
     background-color: #1E1E1E;
     color: #fff;
 }
+
 
 /*******************************/
 
@@ -748,9 +757,15 @@ a.filled-button:hover {
     color: #ffffff;
 }
 
+
 /**********************************/
+
+
 /****** Loader & Back to Top ******/
+
+
 /**********************************/
+
 #loader {
     position: fixed;
     top: 0;
@@ -789,13 +804,21 @@ a.filled-button:hover {
 }
 
 @-webkit-keyframes spin {
-    0% { -webkit-transform: rotate(0deg); }
-    100% { -webkit-transform: rotate(360deg); }
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
 }
 
 @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 .back-to-top {

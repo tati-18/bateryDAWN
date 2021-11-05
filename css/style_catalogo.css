@@ -122,15 +122,15 @@ div.ml-auto {
 }
 
 .btn.btn-custom {
-    padding: 10px 30px 12px 30px;
+    padding: 20px 45px 22px 45px;
     text-align: center;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 500;
     color: #ffffff;
     background: #E81C2E;
     border: none;
     border-radius: 60px;
-    box-shadow: inset 0 0 0 0 #202C45;
+    box-shadow: inset 0 0 0 0 #212529;
     transition: ease-out 0.5s;
     -webkit-transition: ease-out 0.5s;
     -moz-transition: ease-out 0.5s;
@@ -138,8 +138,8 @@ div.ml-auto {
 
 .btn.btn-custom:hover {
     color: #E81C2E;
-    background: #202C45;
-    box-shadow: inset 200px 0 0 0 #202C45;
+    background: #212529;
+    box-shadow: inset 200px 0 0 0 #212529;
 }
 
 .btn:focus,
@@ -175,7 +175,7 @@ div.ml-auto {
     width: 50%;
     height: 2px;
     left: 25%;
-    bottom: 0;
+    bottom: -7px;
     background: #E81C2E;
 }
 
@@ -294,7 +294,7 @@ div.ml-auto {
 
 .nav-bar {
     position: relative;
-    background: #202C45;
+    background: #212529;
 }
 
 a.text-decoration-none {
@@ -312,12 +312,16 @@ a.text-decoration-none {
 
 .nav-bar .navbar {
     padding: 20px 0;
-    background: #202C45 !important;
+    background: #212529 !important;
     transition: .3s;
 }
 
 .nav-bar.nav-sticky .navbar {
     padding: 5px 0;
+}
+
+.nav-bar .nav-link {
+    color: white;
 }
 
 .navbar-dark .navbar-nav .nav-link,
@@ -343,7 +347,7 @@ a.text-decoration-none {
 }
 
 .nav-bar .btn.btn-custom {
-    color: #202C45;
+    color: #212529;
     background: #ffffff;
     box-shadow: inset 0 0 0 0 #dc3545;
 }
@@ -434,12 +438,16 @@ a.text-decoration-none {
 
 /***********************************************/
 
-.carousel-item .carousel-text .btn.btn-custom {
+.carousel-item img {
+    height: 666px;
+}
+
+.carousel-item .secondary-button .btn.btn-custom {
     padding: 20px 45px 22px 45px;
     color: #ffffff;
 }
 
-.carousel-item .carousel-text .btn.btn-custom:hover {
+.carousel-item .secondary-button.btn.btn-custom:hover {
     color: #E81C2E;
 }
 
@@ -462,26 +470,6 @@ a.text-decoration-none {
     flex-direction: column;
 }
 
-.secondary-button a {
-    padding: 20 px 45 px 22 px 45 px;
-    color: #ffffff;
-}
-
-.secondary-button a {
-    padding: 10 px 30 px 12 px 30 px;
-    text-align: center;
-    font-size: 16px;
-    font-weight: 500;
-    color: #ffffff;
-    background: #E81C2E;
-    border: none;
-    border-radius: 60 px;
-    box-shadow: inset 0 0 0 0 #202c45;
-    transition: ease-out 0.5s;
-    -webkit-transition: ease-out 0.5s;
-    -moz-transition: ease-out 0.5s;
-}
-
 .carousel-item .info h2 {
     text-transform: uppercase;
     color: #FFF;
@@ -489,12 +477,12 @@ a.text-decoration-none {
     animation: tracking-in-contract-bck-top 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
     margin-top: 15px;
     margin-bottom: 30px;
-    font-size: 36px;
+    font-size: 60px;
     padding: 0;
     font-weight: 700;
 }
 
-.carousel-caption .info h4 {
+.carousel-item .info h4 {
     font-weight: 300;
     margin: 0;
     padding: 0;
@@ -505,41 +493,35 @@ a.text-decoration-none {
     animation: tracking-in-contract-bck-top 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
 }
 
-@media (max-width:576px) {
-    .carousel-item img {
-        box-sizing: border-box;
-        display: block;
-        width: 400;
-        /*Ancho de la imagen nueva, aunque en este caso son iguales.*/
-        height: 300px;
-        /*Alto de la imagen nueva, aunque en este caso son iguales.*/
-        padding-left: auto;
-        /*Padding igual al ancho de la imagen nueva*/
+@media (max-width: 1150.98px) {
+    .carousel .carousel-item .info h4 {
+        margin-bottom: 5px;
     }
-    .carousel-item .info h2 {
-        font-size: 18px;
-    }
-    .carousel-item .info h4 {
-        font-size: 15px;
-    }
-    .carousel .carousel-text .btn {
-        padding: 8px 20px;
-        font-size: 14px;
-        letter-spacing: 0;
+    .carousel .carousel-item .info h2 {
+        font-size: 50px;
     }
 }
 
-@media (max-width:768px) {
-    .carousel-item .info h2 {
+@media (max-width: 895.98px) {
+    .carousel .carousel-item .info h4 {
         font-size: 18px;
+        letter-spacing: 2px;
+        margin-bottom: 15px;
     }
-    .carousel-item .info h4 {
-        font-size: 15px;
+    .carousel .carousel-item .info h2 {
+        font-size: 45px;
     }
-    .carousel .carousel-text .btn {
-        padding: 10px 25px;
-        font-size: 15px;
-        letter-spacing: 0;
+}
+
+@media (max-width: 793.98px) {
+    .carousel .carousel-item .info h4 {
+        font-size: 14px;
+        letter-spacing: 1px;
+        margin-bottom: 10px;
+    }
+    .carousel .carousel-item .info h2 {
+        font-size: 35px;
+        padding: 0% 15%;
     }
 }
 
@@ -655,15 +637,15 @@ ul {
     background: #E81C2E;
     border: none;
     border-radius: 60px;
-    box-shadow: inset 0 0 0 0 #202C45;
+    box-shadow: inset 0 0 0 0 #212529;
     font-size: 150%;
 }
 
 .tm-paging-link.active,
 .tm-paging-link:hover {
     color: #E81C2E;
-    background: #202C45;
-    box-shadow: inset 200px 0 0 0 #202C45;
+    background: #212529;
+    box-shadow: inset 200px 0 0 0 #212529;
 }
 
 .button {
@@ -713,7 +695,7 @@ div.baterie-banner>img {
 }
 
 .recent-baterie-content .baterie-item:hover {
-    border-bottom: 3px solid #2959ad
+    border-bottom: 3px solid #E81C2E
 }
 
 .recent-baterie-content .baterie-item .thumb-content {
@@ -729,7 +711,7 @@ div.baterie-banner>img {
 }
 
 .recent-baterie-content .baterie-item .thumb-content .baterie-banner a {
-    background-color: #202C45;
+    background-color: #212529;
     border-radius: 3px;
     color: white;
     font-size: 13px;
@@ -769,7 +751,7 @@ div.baterie-banner>img {
 .recent-baterie-content .baterie-item .down-content span {
     font-size: 15px;
     font-weight: 900;
-    color: #2959ad;
+    color: #0F3460;
     margin-bottom: 0px
 }
 
@@ -812,22 +794,25 @@ div.baterie-banner>img {
 }
 
 .recent-baterie-content .baterie-item .down-content ul li .item:hover {
-    background-color: #224286
+    background-color: #212529
 }
 
 .recent-baterie-content .baterie-item .down-content ul li .item:hover i {
-    color: #1e1e1e
+    font-weight: 700;
+    color: #E81C2E
 }
 
 .recent-baterie-content .baterie-item .down-content ul li .item:hover p {
-    color: #1e1e1e
+    font-weight: 700;
+    color: #E81C2E
 }
 
 .recent-baterie-content .baterie-item .down-content ul li .item i {
-    font-size: 11px;
+    font-size: 16px;
     text-transform: uppercase;
     width: 100%;
     padding-bottom: 5px;
+    font-weight: 700;
     float: left
 }
 
@@ -835,7 +820,7 @@ div.baterie-banner>img {
     margin-top: 0px;
     margin-bottom: 3px;
     font-size: 12px;
-    font-weight: 600;
+    font-weight: 700;
     color: #333333
 }
 

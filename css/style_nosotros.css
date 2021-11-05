@@ -1,7 +1,11 @@
+/*******************************/
+
+
+/********* General CSS *********/
+
 
 /*******************************/
-/********* General CSS *********/
-/*******************************/
+
 body {
     color: #444444;
     font-weight: 400;
@@ -9,7 +13,12 @@ body {
     font-family: 'Barlow', sans-serif;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     color: #d7dadf;
 }
 
@@ -26,12 +35,13 @@ a:focus {
     text-decoration: none;
 }
 
-div.ml-auto
-{color: #E81C2E;}
+div.ml-auto {
+    color: #E81C2E;
+}
 
 .btn.btn-custom {
     padding: 10px 30px 12px 30px;
-    text-align: center; 
+    text-align: center;
     font-size: 16px;
     font-weight: 500;
     color: #ffffff;
@@ -59,14 +69,21 @@ div.ml-auto
     max-width: 1366px;
 }
 
-[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
-[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+[class^="flaticon-"]:before,
+[class*=" flaticon-"]:before,
+[class^="flaticon-"]:after,
+[class*=" flaticon-"]:after {
     font-size: inherit;
     margin-left: 0;
 }
 
+
 /**********************************/
+
+
 /*********** Nav Bar CSS **********/
+
+
 /**********************************/
 
 #totalItems {
@@ -86,10 +103,11 @@ div.ml-auto
 
 .nav-bar {
     position: relative;
-    background: #1E1E1E;
+    background: #212529;
 }
-a.text-decoration-none{
-    color:#ffffff
+
+a.text-decoration-none {
+    color: #ffffff
 }
 
 .nav-bar.nav-sticky {
@@ -103,12 +121,16 @@ a.text-decoration-none{
 
 .nav-bar .navbar {
     padding: 20px 0;
-    background: #1E1E1E !important;
+    background: #212529 !important;
     transition: .3s;
 }
 
 .nav-bar.nav-sticky .navbar {
     padding: 5px 0;
+}
+
+.nav-bar .nav-link {
+    color: white;
 }
 
 .navbar-dark .navbar-nav .nav-link,
@@ -134,14 +156,14 @@ a.text-decoration-none{
 }
 
 .nav-bar .btn.btn-custom {
-    color: #202C45;
+    color: #212529;
     background: #ffffff;
     box-shadow: inset 0 0 0 0 #dc3545;
 }
 
 .nav-bar .btn:hover {
     color: #ffffff;
-    background:  #DC3536;
+    background: #DC3536;
     box-shadow: inset 200px 0 0 0 #DC3536;
 }
 
@@ -158,15 +180,14 @@ a.text-decoration-none{
     .navbar-dark .navbar-nav .nav-link.active {
         padding: 5px 0;
     }
-    
     .nav-bar .dropdown-menu {
         box-shadow: none;
     }
-    
     .nav-bar .btn {
         display: none;
     }
 }
+
 
 /*******************************/
 
@@ -196,7 +217,6 @@ a.text-decoration-none{
     margin-bottom: 50px;
 }
 
-
 .section-heading {
     text-align: left;
     margin-bottom: 30px;
@@ -205,19 +225,25 @@ a.text-decoration-none{
 .section-heading h2 {
     font-size: 28px;
     font-weight: 400;
-    font: Poppins, sans-serif 28px ;
-    color: #1E1E1E ;
+    font: Poppins, sans-serif 28px;
+    color: #1E1E1E;
     margin-bottom: 15px;
 }
 
+
 /*******************************/
+
+
 /*********** Team CSS **********/
+
+
 /*******************************/
+
 .team {
     position: relative;
     width: 100%;
     padding: 25px 0 15px 0;
-    background-color: #fffff;
+    background-color: #fff;
     margin-top: 100px;
 }
 
@@ -233,19 +259,19 @@ a.text-decoration-none{
     overflow: hidden;
     max-width: 400px;
 }
-.team .container .section-header h2{
-  padding-bottom: 25px;
-  padding-top: 25px;
-  margin-bottom: 80px;
-  color:#ffffff ;
-  background-color:#1E1E1E ;
+
+.team .container .section-header h2 {
+    padding-bottom: 25px;
+    padding-top: 25px;
+    margin-bottom: 80px;
+    color: #ffffff;
+    background-color: #1E1E1E;
 }
 
 .team .team-img img {
     width: 400px;
     transition: .3s;
 }
-
 
 .team .team-item:hover img {
     transform: scale(1.1);
@@ -366,9 +392,16 @@ a.text-decoration-none{
     font-size: 16px;
     font-weight: 500;
 }
+
+
 /*******************************/
+
+
 /********* Services CSS **********/
+
+
 /*******************************/
+
 
 /* Services */
 
@@ -409,7 +442,6 @@ a.text-decoration-none{
     background-color: #ffffff;
     padding: 40px 30px;
     margin-bottom: 15px;
-
 }
 
 .services .service-item .down-content h4 {
@@ -440,9 +472,15 @@ a.filled-button:hover {
     color: #fff;
 }
 
+
 /*******************************/
+
+
 /********* Footer CSS **********/
+
+
 /*******************************/
+
 .footer {
     position: relative;
     padding-top: 90px;
@@ -573,9 +611,15 @@ a.filled-button:hover {
     color: #ffffff;
 }
 
+
 /**********************************/
+
+
 /****** Loader & Back to Top ******/
+
+
 /**********************************/
+
 #loader {
     position: fixed;
     top: 0;
@@ -614,13 +658,21 @@ a.filled-button:hover {
 }
 
 @-webkit-keyframes spin {
-    0% { -webkit-transform: rotate(0deg); }
-    100% { -webkit-transform: rotate(360deg); }
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
 }
 
 @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 .back-to-top {
