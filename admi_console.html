@@ -71,18 +71,18 @@
             <div class="menu-admi col-lg-4 col-12 ">
                 <h2>REGISTRO</h2>
                 <nav class="nav-admi row ">
-                    <li class="nav-item col-4 col-lg-12 "><button type="button" class="btn-menu-admi btn btn-lg">Producto</button></li>
-                    <li class="nav-item col-4 col-lg-12"><button type="button" class="btn-menu-admi btn btn-lg">Marca</button></li>
-                    <li class="nav-item col-4 col-lg-12"><button type="button" class="btn-menu-admi btn btn-lg">Estadisticas</button></li>
+                    <li class="nav-item col-4 col-lg-12 "><button onclick="handleClick(event)" type="button" class="btn-option-admi btn-menu-admi btn btn-lg" name="Producto">Producto</button></li>
+                    <li class="nav-item col-4 col-lg-12"><button onclick="handleClick(event)" type="button" class="btn-option-admi btn-menu-admi btn btn-lg" name="Marca">Marca</button></li>
+                    <li class="nav-item col-4 col-lg-12"><button onclick="handleClick(event)" type="button" class="btn-option-admi btn-menu-admi btn btn-lg" name="Estadisticas">Estadisticas</button></li>
                 </nav>
                 <h2>CONFIGURACIÓN</h2>
                 <nav class=" nav-admi ">
-                    <li class="nav-item col-sm-12"><button type="button" class="btn-menu-admi btn btn-lg">Usuario</button></li>
+                    <li class="nav-item col-sm-12"><button type="button" class="btn-option-admi btn-menu-admi btn btn-lg" name="Usuario">Usuario</button></li>
                 </nav>
             </div>
             <div class="content col-lg-8 ">
                 <h2>Nuevo Producto</h2>
-                <form action="" class="producto">
+                <form action="" method="post" class="producto">
                     <div class="row  mb-3 align-items-center">
                         <div class="col-12 col-lg-3">
                           <label for="name" class="col-form-label">Nombre</label>
@@ -111,7 +111,7 @@
                         </div>
                         <div class="col-lg-3" >
                             <select class="form-select" aria-label="Default select example">
-                                <option selected>Open this select menu</option>
+                                <option disabled selected>Seleccione una marca</option>
                                 <option value="1">Marca 1</option>
                                 <option value="2">Marca 2</option>
                                 <option value="3">Marca 3</option>
@@ -120,7 +120,7 @@
                     </div>
                     <div class="row   align-items-center justify-content-center">
                         <label class="custom-file-upload col-12 col-lg-8">
-                            <iput type="file" name="imagen" id="imagen"> Subir Imagen</input>
+                            <iput type="file" id="imagen"> Subir Imagen</input>
                         </label>
                     </div>
                     <div class="row  align-items-center justify-content-center">
@@ -133,16 +133,7 @@
         </div>
     </div>
 
-    <script>
-        jQuery('input[type=file]').change(function(){
-        var filename = jQuery(this).val().split('\\').pop();
-        var idname = jQuery(this).attr('id');
-        console.log(jQuery(this));
-        console.log(filename);
-        console.log(idname);
-        jQuery('span.'+idname).next().find('span').html(filename);
-    });
-    </script>
+    <script src="js/admi_console.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
     <script src="lib/easing/easing.min.js"></script>

@@ -76,6 +76,11 @@ input[type="file"] , input[type="submit"]{
     margin-bottom: 0.5rem;
  }
 
+ .custom-file-upload:hover{
+     color: #E81C2E;
+ }
+ .custom-file-upload:
+
 .producto{
     justify-content: space-between;
 }
