@@ -86,7 +86,7 @@ div.ml-auto
 
 .nav-bar {
     position: relative;
-    background: #202C45;
+    background: #1E1E1E;
 }
 a.text-decoration-none{
     color:#ffffff
@@ -103,7 +103,7 @@ a.text-decoration-none{
 
 .nav-bar .navbar {
     padding: 20px 0;
-    background: #202C45 !important;
+    background: #1E1E1E !important;
     transition: .3s;
 }
 
@@ -168,6 +168,47 @@ a.text-decoration-none{
     }
 }
 
+/*******************************/
+
+
+/********* Contact-Heading CSS *********/
+
+
+/*******************************/
+
+.nosotros-heading {
+    background-image: url(../img/nosotros-heading.jpg);
+}
+
+.page-heading {
+    padding: 210px 0px 130px 0px;
+    text-align: center;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.page-heading .text-content h4 {
+    color: #E81C2E;
+    font-size: 50px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+
+
+.section-heading {
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.section-heading h2 {
+    font-size: 28px;
+    font-weight: 400;
+    font: Poppins, sans-serif 28px ;
+    color: #1E1E1E ;
+    margin-bottom: 15px;
+}
 
 /*******************************/
 /*********** Team CSS **********/
@@ -177,6 +218,7 @@ a.text-decoration-none{
     width: 100%;
     padding: 25px 0 15px 0;
     background-color: #fffff;
+    margin-top: 100px;
 }
 
 .team .team-item {
@@ -189,15 +231,18 @@ a.text-decoration-none{
     position: relative;
     border-radius: 5px 5px 0 0;
     overflow: hidden;
-    max-width: 450px;
+    max-width: 400px;
 }
 .team .container .section-header h2{
-  padding-bottom: 10px;
-  color:#202C45 ;
+  padding-bottom: 25px;
+  padding-top: 25px;
+  margin-bottom: 80px;
+  color:#ffffff ;
+  background-color:#1E1E1E ;
 }
 
 .team .team-img img {
-    width: 450px;
+    width: 400px;
     transition: .3s;
 }
 
@@ -208,10 +253,10 @@ a.text-decoration-none{
 
 .team .team-text {
     position: relative;
-    width: 450px;
+    width: 400px;
     padding: 35px 30px 30px 30px;
     text-align: center;
-    background: #202C45;
+    background: #1E1E1E;
     border-radius: 0 0 5px 5px;
     transition: .5s;
 }
@@ -221,7 +266,7 @@ a.text-decoration-none{
 }
 
 .team .team-text h2 {
-    color: #fffff;
+    color: #ffffff;
     font-size: 20px;
     font-weight: 600;
     letter-spacing: 1px;
@@ -252,7 +297,7 @@ a.text-decoration-none{
     text-align: center;
     font-size: 16px;
     color: #ffffff;
-    background: #202C45;
+    background: #1E1E1E;
     border-radius: 40px;
     transition: .5s;
 }
@@ -265,6 +310,135 @@ a.text-decoration-none{
     color: #202C45;
 }
 
+.team .contact-info {
+    width: 100%;
+    margin-bottom: 45px;
+    padding: 35px 30px 10px 30px;
+    border-radius: 15px;
+    background: #202C45;
+}
+
+.team .contact-info-item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 30px;
+}
+
+.team .contact-info-icon {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+    border-radius: 50px;
+}
+
+.team .contact-info-icon i {
+    margin: 0;
+    color: #202C45;
+    font-size: 16px;
+}
+
+.team .contact-info-text {
+    padding-left: 20px;
+}
+
+.team .contact-info h2 {
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.team .contact-info-text h3 {
+    margin: 0 0 5px 0;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.team .contact-info-text p {
+    margin: 0;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+}
+/*******************************/
+/********* Services CSS **********/
+/*******************************/
+
+/* Services */
+
+.services {
+    background-image: url(../img/services.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 100px 0px;
+    margin-top: 100px;
+}
+
+.services .service-item {
+    text-align: center;
+}
+
+.services .service-item .icon {
+    background-color: #1B1A17;
+    padding: 40px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px
+}
+
+.services .service-item .icon i {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    text-align: center;
+    line-height: 100px;
+    background-color: #f7f7f7;
+    color: #1B1A17;
+    font-size: 32px;
+    border-radius: 30px;
+}
+
+.services .service-item .down-content {
+    background-color: #ffffff;
+    padding: 40px 30px;
+    margin-bottom: 15px;
+
+}
+
+.services .service-item .down-content h4 {
+    font-size: 17px;
+    color: #1A6692;
+    margin-bottom: 20px;
+}
+
+.services .service-item .down-content p {
+    margin-bottom: 25px;
+    color: #1E1E1E;
+}
+
+a.filled-button {
+    background-color: #E81C2E;
+    color: #ffffff;
+    font-size: 14px;
+    text-transform: capitalize;
+    font-weight: 300;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    transition: all 0.3s;
+}
+
+a.filled-button:hover {
+    background-color: #1E1E1E;
+    color: #fff;
+}
 
 /*******************************/
 /********* Footer CSS **********/
@@ -272,7 +446,7 @@ a.text-decoration-none{
 .footer {
     position: relative;
     padding-top: 90px;
-    background: #202C45;
+    background: #1E1E1E;
 }
 
 .footer .footer-contact,

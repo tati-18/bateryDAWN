@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
     <title>AutoWash - Car Wash Website Template</title>
@@ -32,30 +31,49 @@
     <div class="nav-bar">
         <div class="container">
             <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
-                <a href="#" class="navbar-brand">MENU</a>
-                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
+                <a class="navbar-brand" href="#">
+                    MENU
+                </a>
+                <button class="navbar-toggler" data-target="#navbarCollapse" data-toggle="collapse" type="button">
+                    <span class="navbar-toggler-icon">
+                    </span>
+                </button>
                 <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                     <div class="navbar-nav mr-auto">
-                        <a href="index.html" class="nav-item nav-link ">Inicio</a>
-                        <a href="about.html" class="nav-item nav-link">Noticias</a>
-                        <a href="service.html" class="nav-item nav-link">Catalogos</a>
-                        <a href="price.html" class="nav-item nav-link">Nosotros</a>
-                        <a href="contact.html" class="nav-item nav-link active">Contactos</a>
+                        <a class="nav-item nav-link " href="index.html">
+                            Inicio
+                        </a>
+                        <a class="nav-item nav-link" href="about.html">
+                            Noticias
+                        </a>
+                        <a class="nav-item nav-link" href="service.html">
+                            Catalogos
+                        </a>
+                        <a class="nav-item nav-link" href="price.html">
+                            Nosotros
+                        </a>
+                        <a class="nav-item nav-link active" href="contact.html">
+                            Contactos
+                        </a>
                     </div>
-
                     <div class="ml-auto">
-                        <button type="button" class="btn btn-outline-secondary">
-            <a href="#" class="text-decoration-none">Iniciar Sesion</a>
-            <i class="bi bi-person"></i>
-          </button>
-                        <button type="button" class="btn btn-outline-secondary" onclick="location.href='carrito.html'">
-                        <span id="totalItems">5</span>
-                        <i class="bi bi-cart4"></i>
-            <span class="visually-hidden">Carrito</span>
-          </button>
+                        <button class="btn btn-outline-secondary" type="button">
+                            <a class="text-decoration-none" href="#">
+                                Iniciar Sesion
+                            </a>
+                            <i class="bi bi-person">
+                            </i>
+                        </button>
+                        <button class="btn btn-outline-secondary" onclick="location.href='carrito.html'" type="button">
+                            <span id="totalItems">
+                                5
+                            </span>
+                            <i class="bi bi-cart4">
+                            </i>
+                            <span class="visually-hidden">
+                                Carrito
+                            </span>
+                        </button>
                     </div>
                 </div>
             </nav>
@@ -63,164 +81,323 @@
     </div>
     <!-- Nav Bar End -->
 
+    <!-- Header -->
+    <div class="page-heading contact-heading header-text">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="text-content">
+              <h4>Contáctanos</h4>
+              <h2>Siempre cerca de tí</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Header End -->
+
+    <!-- Ubicanos -->
+    <div class="ubicanos">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9">
+                    <div class="section-heading">
+                        <h2>Nuestra ubicación</h2>
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <div id="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3987.014669483384!2d-79.96668364909449!3d-2.14807019842652!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d72f925e5bfdb%3A0x327cdb9f7f4ba3b2!2sEscuela%20Superior%20Politecnica%20del%20Litoral!5e0!3m2!1sen!2sec!4v1636073038108!5m2!1sen!2sec" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="right-content">
+                        <h4>Acerca de nosotros</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisic elit. Sed voluptate nihil eumester consectetur similiqu consectetur.<br><br>Lorem ipsum dolor sit amet, consectetur adipisic elit. Et, consequuntur, modi mollitia corporis ipsa voluptate corrupti.</p>
+                        <ul class="social-icons">
+                            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div>
+                
+            </div>
+        </div>
+        
+    </div>
+    <!-- Ubicanos End -->
+
+    <!-- Acerca de nosotros- boton -->
+    <div class="services">
+        <div class="container">
+            <div class="row" >
+                <div class="col-lg-8 col-md-8 col-12">
+                    <h2>Conoce más acerca de nosotros</h2>
+                </div>
+                <div class="col-lg-4 col-md-4 col-12">
+                    <div id="boton-enlace">
+                        <a href="price.html" class="filled-button">Nosotros</a>
+                     </div>
+                </div>
+            </div>
+                            
+        </div> 
+    </div>
+    <!-- Acerca de nosotros- boton End -->
 
     <!-- Contact Start -->
     <div class="contact">
         <div class="container">
-            <div class="head-contact-us">
-                <h1>Contáctanos</h1>
-            </div>
-            <div class="section-header text-center">
-                <h2>Escribenos un mensaje</h2>
-            </div>
             <div class="row">
-                <div class="col-lg-4 col-md-5 col-sm-6">
-                    <div class="contact-info">
-                        <h2>Informacion de contacto</h2>
-                        <div class="contact-info-item">
-                            <div class="contact-info-icon">
-                                <i class="far fa-clock"></i>
-                            </div>
-                            <div class="contact-info-text">
-                                <h3>Horario de apertura</h3>
-                                <p>Lun - Vie, 8:00 - 6:00</p>
-                            </div>
-                        </div>
-                        <div class="contact-info-item">
-                            <div class="contact-info-icon">
-                                <i class="fa fa-phone-alt"></i>
-                            </div>
-                            <div class="contact-info-text">
-                                <h3>Llamanos</h3>
-                                <p>+593 994487520</p>
-                            </div>
-                        </div>
-                        <div class="contact-info-item">
-                            <div class="contact-info-icon">
-                                <i class="far fa-envelope"></i>
-                            </div>
-                            <div class="contact-info-text">
-                                <h3>Contactanos</h3>
-                                <p>battery@example.com</p>
-                            </div>
-                        </div>
+                <div class="col-md-7">
+                    <div class="section-header">
+                        <h2>
+                            Escribenos un mensaje
+                        </h2>
                     </div>
-                </div>
-                <div class="col-lg-8 col-md-7 col-sm-6">
                     <div class="contact-form">
-                        <div id="success"></div>
-                        <form name="sentMessage" id="contactForm" novalidate="novalidate">
+                        <div id="success">
+                        </div>
+                        <form id="contactForm" name="sentMessage" novalidate="novalidate">
                             <div class="control-group">
-                                <input type="text" class="form-control" id="name" placeholder="Su nombre" required="required" data-validation-required-message="Por favor ingrese su nombre" />
-                                <p class="help-block text-danger"></p>
+                                <input class="form-control" data-validation-required-message="Por favor ingrese su nombre" id="name" placeholder="Su nombre" required="required" type="text"/>
+                                <p class="help-block text-danger">
+                                </p>
                             </div>
                             <div class="control-group">
-                                <input type="email" class="form-control" id="email" placeholder="Su email" required="required" data-validation-required-message="Por favor ingrese su email" />
-                                <p class="help-block text-danger"></p>
+                                <input class="form-control" data-validation-required-message="Por favor ingrese su email" id="email" placeholder="Su email" required="required" type="email"/>
+                                <p class="help-block text-danger">
+                                </p>
                             </div>
                             <div class="control-group">
-                                <input type="text" class="form-control" id="subject" placeholder="Asunto" required="required" data-validation-required-message="Por favor ingrese un asunto" />
-                                <p class="help-block text-danger"></p>
+                                <input class="form-control" data-validation-required-message="Por favor ingrese un asunto" id="subject" placeholder="Asunto" required="required" type="text"/>
+                                <p class="help-block text-danger">
+                                </p>
                             </div>
                             <div class="control-group">
-                                <textarea class="form-control" id="message" placeholder="Mensaje" required="required" data-validation-required-message="Por favor ingrese su mensaje"></textarea>
-                                <p class="help-block text-danger"></p>
+                                <textarea class="form-control" data-validation-required-message="Por favor ingrese su mensaje" id="message" placeholder="Mensaje" required="required">
+                                </textarea>
+                                <p class="help-block text-danger">
+                                </p>
                             </div>
-                            <div>
-                                <button class="btn btn-custom" type="submit" id="sendMessageButton">Enviar mensaje</button>
+                            <div id="boton">
+                                <button class="btn btn-custom" id="sendMessageButton" type="submit">
+                                    Enviar mensaje
+                                </button>
                             </div>
                         </form>
                     </div>
                 </div>
-                <div class="col-lg-12">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3987.01424585066!2d-79.96668659909454!3d-2.148232498426391!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d72f925e5bfdb%3A0x327cdb9f7f4ba3b2!2sEscuela%20Superior%20Politecnica%20del%20Litoral!5e0!3m2!1sen!2sec!4v1635998957038!5m2!1sen!2sec"
-                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <div class="col-md-1"></div>
+                <div class="col-md-4 col-12">
+                    <div class="contact-info">
+                        <h2>
+                            Informacion de contacto
+                        </h2>
+                        <div class="contact-info-item">
+                            <div class="contact-info-icon">
+                                <i class="far fa-clock">
+                                </i>
+                            </div>
+                            <div class="contact-info-text">
+                                <h3>
+                                    Horario de apertura
+                                </h3>
+                                <p>
+                                    Lun - Vie, 8:00 - 6:00
+                                </p>
+                            </div>
+                        </div>
+                        <div class="contact-info-item">
+                            <div class="contact-info-icon">
+                                <i class="fa fa-phone-alt">
+                                </i>
+                            </div>
+                            <div class="contact-info-text">
+                                <h3>
+                                    Llamanos
+                                </h3>
+                                <p>
+                                    +593 994487520
+                                </p>
+                            </div>
+                        </div>
+                        <div class="contact-info-item">
+                            <div class="contact-info-icon">
+                                <i class="far fa-envelope">
+                                </i>
+                            </div>
+                            <div class="contact-info-text">
+                                <h3>
+                                    Contactanos
+                                </h3>
+                                <p>
+                                    battery@example.com
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
     <!-- Contact End -->
-
-
     <!-- Footer Start -->
     <div class="footer">
         <div class="container">
             <div class="row">
                 <div class="col-lg-3 col-md-6">
                     <div class="footer-contact">
-                        <h2>Get In Touch</h2>
-                        <p><i class="fa fa-map-marker-alt"></i>Vía Perimetral 5, Guayaquil, Ecuador</p>
-                        <p><i class="fa fa-phone-alt"></i>+593 994487520</p>
-                        <p><i class="fa fa-envelope"></i>battery@example.com</p>
+                        <h2>
+                            Get In Touch
+                        </h2>
+                        <p>
+                            <i class="fa fa-map-marker-alt">
+                            </i>
+                            Vía Perimetral 5, Guayaquil, Ecuador
+                        </p>
+                        <p>
+                            <i class="fa fa-phone-alt">
+                            </i>
+                            +593 994487520
+                        </p>
+                        <p>
+                            <i class="fa fa-envelope">
+                            </i>
+                            battery@example.com
+                        </p>
                         <div class="footer-social">
-                            <a class="btn" href=""><i class="fab fa-twitter"></i></a>
-                            <a class="btn" href=""><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn" href=""><i class="fab fa-youtube"></i></a>
-                            <a class="btn" href=""><i class="fab fa-instagram"></i></a>
-                            <a class="btn" href=""><i class="fab fa-linkedin-in"></i></a>
+                            <a class="btn" href="">
+                                <i class="fab fa-twitter">
+                                </i>
+                            </a>
+                            <a class="btn" href="">
+                                <i class="fab fa-facebook-f">
+                                </i>
+                            </a>
+                            <a class="btn" href="">
+                                <i class="fab fa-youtube">
+                                </i>
+                            </a>
+                            <a class="btn" href="">
+                                <i class="fab fa-instagram">
+                                </i>
+                            </a>
+                            <a class="btn" href="">
+                                <i class="fab fa-linkedin-in">
+                                </i>
+                            </a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <div class="footer-link">
-                        <h2>Popular Links</h2>
-                        <a href="">About Us</a>
-                        <a href="">Contact Us</a>
-                        <a href="">Our Service</a>
-                        <a href="">Service Points</a>
-                        <a href="">Pricing Plan</a>
+                        <h2>
+                            Popular Links
+                        </h2>
+                        <a href="">
+                            About Us
+                        </a>
+                        <a href="">
+                            Contact Us
+                        </a>
+                        <a href="">
+                            Our Service
+                        </a>
+                        <a href="">
+                            Service Points
+                        </a>
+                        <a href="">
+                            Pricing Plan
+                        </a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <div class="footer-link">
-                        <h2>Useful Links</h2>
-                        <a href="">Terms of use</a>
-                        <a href="">Privacy policy</a>
-                        <a href="">Cookies</a>
-                        <a href="">Help</a>
-                        <a href="">FQAs</a>
+                        <h2>
+                            Useful Links
+                        </h2>
+                        <a href="">
+                            Terms of use
+                        </a>
+                        <a href="">
+                            Privacy policy
+                        </a>
+                        <a href="">
+                            Cookies
+                        </a>
+                        <a href="">
+                            Help
+                        </a>
+                        <a href="">
+                            FQAs
+                        </a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <div class="footer-newsletter">
-                        <h2>Newsletter</h2>
+                        <h2>
+                            Newsletter
+                        </h2>
                         <form>
                             <input class="form-control" placeholder="Full Name">
-                            <input class="form-control" placeholder="Email">
-                            <button class="btn btn-custom">Submit</button>
+                                <input class="form-control" placeholder="Email">
+                                    <button class="btn btn-custom">
+                                        Submit
+                                    </button>
+                                </input>
+                            </input>
                         </form>
                     </div>
                 </div>
             </div>
         </div>
         <div class="container copyright">
-            <p>&copy; <a href="#">Your Site Name</a>, All Right Reserved. Designed By <a href="https://htmlcodex.com">HTML Codex</a></p>
+            <p>
+                ©
+                <a href="#">
+                    Your Site Name
+                </a>
+                , All Right Reserved. Designed By
+                <a href="https://htmlcodex.com">
+                    HTML Codex
+                </a>
+            </p>
         </div>
     </div>
     <!-- Footer End -->
-
     <!-- Back to top button -->
-    <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
-
+    <a class="back-to-top" href="#">
+        <i class="fa fa-chevron-up">
+        </i>
+    </a>
     <!-- Pre Loader -->
-    <div id="loader" class="show">
-        <div class="loader"></div>
+    <div class="show" id="loader">
+        <div class="loader">
+        </div>
     </div>
-
     <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/counterup/counterup.min.js"></script>
-
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js">
+    </script>
+    <script src="lib/easing/easing.min.js">
+    </script>
+    <script src="lib/owlcarousel/owl.carousel.min.js">
+    </script>
+    <script src="lib/waypoints/waypoints.min.js">
+    </script>
+    <script src="lib/counterup/counterup.min.js">
+    </script>
     <!-- Contact Javascript File -->
-    <script src="mail/jqBootstrapValidation.min.js"></script>
-    <script src="mail/contact.js"></script>
-
+    <script src="mail/jqBootstrapValidation.min.js">
+    </script>
+    <script src="mail/contact.js">
+    </script>
     <!-- Template Javascript -->
-    <script src="js/main.js"></script>
-</body>
-
+    <script src="js/main.js">
+    </script>
 </html>
