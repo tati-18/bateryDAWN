@@ -411,53 +411,22 @@ div.ml-auto {
 /*******************************/
 
 
-/********** About CSS **********/
+/********** Card CSS **********/
 
 
 /*******************************/
 
-.about {
-    position: relative;
-    width: 100%;
-    padding: 45px 0 15px 0;
+div#card.container{
+    padding-top: 30px;
 }
 
-.about .section-header {
-    margin-bottom: 30px;
-    margin-left: 0;
-}
-
-.about .section-header h2 {
+.container .card h5 {
     color: #212529;
 }
 
-.about .about-img img {
-    width: 100%;
-    border-radius: 5px;
-    margin-bottom: 30px;
+div#segundoC.container{
+    padding-top: 30px;
 }
-
-.about .about-content {
-    margin-bottom: 30px;
-}
-
-.about .about-content ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    margin-bottom: 25px;
-}
-
-.about .about-content ul li {
-    margin-bottom: 5px;
-}
-
-.about .about-content ul li i {
-    margin-right: 8px;
-    color: #E81C2E;
-}
-
-
 
 /**********************************/
 
