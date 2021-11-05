@@ -105,7 +105,7 @@ h6 {
 }
 
 a {
-    color: #202C45;
+    color: #212529;
     transition: .3s;
 }
 
@@ -130,7 +130,7 @@ div.ml-auto {
     background: #E81C2E;
     border: none;
     border-radius: 60px;
-    box-shadow: inset 0 0 0 0 #202C45;
+    box-shadow: inset 0 0 0 0 #212529;
     transition: ease-out 0.5s;
     -webkit-transition: ease-out 0.5s;
     -moz-transition: ease-out 0.5s;
@@ -138,8 +138,8 @@ div.ml-auto {
 
 .btn.btn-custom:hover {
     color: #E81C2E;
-    background: #202C45;
-    box-shadow: inset 200px 0 0 0 #202C45;
+    background: #212529;
+    box-shadow: inset 200px 0 0 0 #212529;
 }
 
 .btn:focus,
@@ -265,7 +265,7 @@ div.ml-auto {
 }
 
 .back-to-top:hover {
-    background: #202C45;
+    background: #212529;
 }
 
 
@@ -294,7 +294,7 @@ div.ml-auto {
 
 .nav-bar {
     position: relative;
-    background: #202C45;
+    background: #212529;
 }
 
 a.text-decoration-none {
@@ -312,8 +312,12 @@ a.text-decoration-none {
 
 .nav-bar .navbar {
     padding: 20px 0;
-    background: #202C45 !important;
+    background: #212529 !important;
     transition: .3s;
+}
+
+div#navbarCollapse{
+    background-color: #dddddd;
 }
 
 .nav-bar.nav-sticky .navbar {
@@ -343,7 +347,7 @@ a.text-decoration-none {
 }
 
 .nav-bar .btn.btn-custom {
-    color: #202C45;
+    color: #212529;
     background: #ffffff;
     box-shadow: inset 0 0 0 0 #dc3545;
 }
@@ -388,7 +392,7 @@ a.text-decoration-none {
     position: relative;
     margin-top: 45px;
     padding-top: 90px;
-    background: #202C45;
+    background: #212529;
 }
 
 .footer .footer-contact,
@@ -445,7 +449,7 @@ a.text-decoration-none {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #202C45;
+    color: #212529;
     background: #ffffff;
     border-radius: 40px;
     margin-right: 5px;
@@ -483,7 +487,7 @@ a.text-decoration-none {
 
 .footer .footer-newsletter .btn.btn-custom {
     width: 100%;
-    color: #202C45;
+    color: #212529;
     background: #ffffff;
     box-shadow: inset 0 0 0 0 #E81C2E;
 }
