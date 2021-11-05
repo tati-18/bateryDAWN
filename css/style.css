@@ -581,7 +581,7 @@ a.text-decoration-none {
 /*******************************/
 
 
-/********* Service CSS *********/
+/********* Marcas CSS *********/
 
 
 /*******************************/
@@ -678,10 +678,19 @@ section.top-slider-features .slider-top-features .car-item .thumb-content .thumb
     background-size: cover
 }
 
-.marcas .container .section-header h1,
-h4 {
-    color: #ffffff;
-    text-align: center;
+.marcas .container .section-header{
+    padding-top: 10px;
+    border-bottom-width: 10px;
+    padding-bottom: 10px;
+}
+.marcas .container .section-header h2,
+h3 {
+    color: white;
+    text-align: center;  
+}
+.marcas .container .row{
+
+padding-bottom: 10px;
 }
 
 section.top-slider-features .slider-top-features .car-item .down-content {
@@ -1411,7 +1420,26 @@ section.top-slider-features .slider-top-features .owl-dots {
 
 .team .container .section-header h2 {
     padding-bottom: 10px;
+    color: white;
 }
+.team .team-item> .team-text{
+    background-color:white;
+    
+}
+.team .team-item:hover> .team-text{
+    background-color:#E81C2E;
+    
+}
+.team .container .row .team-item:hover> .team-text > h2{
+    color:white;
+    
+}
+.team .container .row .team-item > .team-text > h2{
+color: #1A6692;
+}
+.team .container .row .team-item > .team-text > p{
+    color: #212529;
+    }
 
 .team .team-img img {
     width: 100%;
@@ -1432,9 +1460,7 @@ section.top-slider-features .slider-top-features .owl-dots {
     transition: .5s;
 }
 
-.team .team-item:hover .team-text {
-    background: #E81C2E;
-}
+
 
 .team .team-text h2 {
     color: #ffffff;
