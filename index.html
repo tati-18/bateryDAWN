@@ -26,12 +26,15 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet" />
+    <!--cdn de intro.js-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intro.js@4.1.0/introjs.css">
 </head>
 
 <body>
     <!-- Nav Bar Start -->
     <div class="nav-bar nav-sticky">
         <nav class="navbar navbar-expand-lg navbar-dark ">
+        <div class="container" data-title="Bienvenidos &#x26a1" data-intro="Hola, aqui te mostramos todas las secciones de nuestra página web &#x1f44b" >
             <a class="navbar-brand" href="#">MENU</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -39,36 +42,37 @@
     
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
+                    <li class="nav-item active" data-title ="Inicio" data-intro="Aquí encontrará información general de Baterizate &#x26a1 ">
                         <a href="index.html" class="nav-item nav-link active ">Inicio</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item" data-title ="Promociones" data-intro="Aquí encontrará cupones e impactantes descuentos &#x1f4b8 ">
                         <a href="promociones.html" class="nav-item nav-link">Promociones</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item" data-title ="Catalogo" data-intro="Aquí encontrará las baterias que tenemos disponibles &#x1f4cb">
                         <a href="service.html" class="nav-item nav-link ">Catalogos</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item" data-title ="Inicio" data-intro="Aquí encontrará información sobre los desarrolladores de nuestra pagina web &#x1f4bb ">
                         <a href="price.html" class="nav-item nav-link">Nosotros</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item" data-title ="Inicio" data-intro="Aquí podrás ponerte en contacto con nosotros &#x1f4cd &#x1f4e7">
                         <a href="contact.html" class="nav-item nav-link">Contactos</a>
                     </li>
     
                 </ul>
-                <div class=" my-2 my-lg-0">
-                    <button type="button" class="btn btn-outline-secondary">
-                        <a href="login.html" class="text-decoration-none">Iniciar Sesion</a>
+                <div class=" my-2 my-lg-0" >
+                    <button type="button" class="btn btn-outline-secondary" data-intro="Si eres un administrador, puedes ingresar aqui ">
+                        <a href="login.html" class="text-decoration-none">Iniciar Sesión</a>
                         <i class="bi bi-person"></i>
                     </button>
     
-                    <button type="button" class="btn btn-outline-secondary" onclick="location.href='carrito.html'">
+                    <button type="button" class="btn btn-outline-secondary" onclick="location.href='carrito.html'"data-title ="Carrito" data-intro="Visualiza tus productos">
                         <span id="nav-cart-count" aria-hidden="true" class="nav-cart-count nav-cart-1 nav-progressive-attribute nav-progressive-content">1</span>
                         <i class="bi bi-cart4"></i>
                         <span class="visually-hidden">Carrito</span>
                     </button>
                 </div>
             </div>
+        </div>
         </nav>
     </div>
     <!-- Nav Bar End -->
@@ -379,6 +383,10 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+
+    <!-- Core theme JS-->
+    <script src="https://cdn.jsdelivr.net/npm/intro.js@4.1.0/intro.min.js"></script>
+    <script src="js/vistaGuiad.js"></script>
 </body>
 
 </html>
