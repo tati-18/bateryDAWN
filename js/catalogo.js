@@ -11,11 +11,14 @@ let cambiocatalogo = () => {
             }
             let cat_marcas = document.getElementsByClassName("tm-gallery-page")
             for (let marca of cat_marcas) {
-                console.log(marca.getAttribute("id"))
-                if (marca.getAttribute("id").includes(a.innerHTML)) {
+                if (a.innerHTML == "Todos los Productos") {
                     marca.classList.remove("hidden")
                 } else {
-                    marca.classList.add("hidden")
+                    if (marca.getAttribute("id").includes(a.innerHTML)) {
+                        marca.classList.remove("hidden")
+                    } else {
+                        marca.classList.add("hidden")
+                    }
                 }
             }
         })
