@@ -1,4 +1,5 @@
 function cambiohtml(producto) {
+    
     let html =
         `<div class="col-md-4 col-sm-6 bateria">
     <div class="baterie-item wow fadeIn animated" data-wow-duration="0.75s" style="visibility: visible;-webkit-animation-duration: 0.75s; -moz-animation-duration: 0.75s; animation-duration: 0.75s;">
