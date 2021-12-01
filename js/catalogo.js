@@ -22,7 +22,7 @@ function cambiohtml(producto) {
 
             <ul class="baterie-info">
                 <li>
-                    <div class="button item"><i class="bi bi-cart3"></i>
+                    <div class="button item ${ producto.cantidad <= 0 ? "disabledbutton" : ""}"><i class="bi bi-cart3"></i>
                         <p>Añadir al carrito</p>
                     </div>
                 </li>
@@ -32,6 +32,7 @@ function cambiohtml(producto) {
 </div>`
     return html;
 }
+
 let peticion = async() => {
     let htmlC = ``;
     try {
