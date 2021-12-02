@@ -1,5 +1,5 @@
 function cambiohtml(producto) {
-    
+
     let html =
         `<div class="col-md-4 col-sm-6 bateria">
     <div class="baterie-item wow fadeIn animated" data-wow-duration="0.75s" style="visibility: visible;-webkit-animation-duration: 0.75s; -moz-animation-duration: 0.75s; animation-duration: 0.75s;">
@@ -23,7 +23,7 @@ function cambiohtml(producto) {
 
             <ul class="baterie-info">
                 <li>
-                    <div class="button item ${ producto.cantidad <= 0 ? "disabledbutton" : ""}"><i class="bi bi-cart3"></i>
+                    <div class="button item ${ producto.cantidad <= 0 ? "disabledbutton" : "activo_compra"}"><i class="bi bi-cart3"></i>
                         <p>Añadir al carrito</p>
                     </div>
                 </li>
@@ -48,7 +48,7 @@ let peticion = async() => {
         console.log(error);
     }
     document.getElementsByClassName("catalogo_bateria")[0].innerHTML = htmlC
-
+    agregarCarrito()
 }
 document.addEventListener("DOMContentLoaded", function(event) {
     peticion();
@@ -78,6 +78,7 @@ function filtrado() {
                 }
             });
             document.getElementsByClassName("catalogo_bateria")[0].innerHTML = htmlC
+            agregarCarrito()
         })
         .catch(console.error);
 }
@@ -108,6 +109,7 @@ let cambioproductos = async(a) => {
     }
     if (a.innerHTML != "Todos los Productos") {
         document.getElementsByClassName("catalogo_bateria")[0].innerHTML = htmlC
+        agregarCarrito()
     } else {
         peticion()
     }
@@ -130,3 +132,15 @@ let cambiocatalogo = () => {
 
 }
 cambiocatalogo()
+
+let agregarCarrito = () => {
+    let botones = document.getElementsByClassName("activo_compra")
+    console.log(botones)
+    for (let butt of botones) {
+        butt.addEventListener("click", () => {
+            let vr = document.getElementById("nav-cart-count")
+            vr.innerHTML = parseInt(vr.innerHTML) + 1
+        })
+    }
+
+}
