@@ -1,6 +1,6 @@
 {
     "Productos": [{
-            "id":1,
+            "id": 1,
             "nombre": "Bosch S3 30H FE",
             "tipo": "Bosch",
             "precio": "$130.00",
@@ -8,7 +8,7 @@
             "src": "img/tiposBaterias/Bosch/BoschS330HFE.jpg",
             "cantidad": 5
         }, {
-            "id":2,
+            "id": 2,
             "nombre": "Bosch S3 N150 HD",
             "tipo": "Bosch",
             "precio": "$200.00",
@@ -17,7 +17,7 @@
             "cantidad": 5
 
         }, {
-            "id":3,
+            "id": 3,
             "nombre": "Bosch S4 24 HP",
             "tipo": "Bosch",
             "precio": "$105.00",
@@ -25,7 +25,7 @@
             "src": "img/tiposBaterias/Bosch/BoschS424HP.jpg",
             "cantidad": 2
         }, {
-            "id":4,
+            "id": 4,
             "nombre": "Dacar BP 25-70",
             "tipo": "Dacar",
             "precio": "$104.00",
@@ -33,7 +33,7 @@
             "src": "img/tiposBaterias/Dacar/DacarBP25-70.png",
             "cantidad": 0
         }, {
-            "id":5,
+            "id": 5,
             "nombre": "Dacar ECO 42-40",
             "tipo": "Dacar",
             "precio": "$50.00",
@@ -42,7 +42,7 @@
             "cantidad": 2
         },
         {
-            "id":6,
+            "id": 6,
             "nombre": "Dacar TAXI 42-60",
             "tipo": "Dacar",
             "precio": "$75.00",
@@ -51,7 +51,7 @@
             "cantidad": 7
         },
         {
-            "id":7,
+            "id": 7,
             "nombre": "Mac AGM LN4",
             "tipo": "Mac",
             "precio": "$300.00",
@@ -60,7 +60,7 @@
             "cantidad": 8
         },
         {
-            "id":8,
+            "id": 8,
             "nombre": "Mac GOLD PLUS 24 950",
             "tipo": "Mac",
             "precio": "$110.00",
@@ -69,7 +69,7 @@
             "cantidad": 5
         },
         {
-            "id":9,
+            "id": 9,
             "nombre": "Mac SILVER PLUS 31T 852",
             "tipo": "Mac",
             "precio": "$120.00",
@@ -79,22 +79,22 @@
         }
     ],
 
-    "Ventas":[{
-            "id":1,
+    "Ventas": [{
+            "id": 1,
             "cantidad": 3
         }, {
-            "id":5,
+            "id": 5,
             "cantidad": 2
 
         }, {
-            "id":9,
+            "id": 9,
             "cantidad": 1
         },
         {
-            "id":4,
+            "id": 4,
             "cantidad": 1
         }
-        
+
 
 
     ]

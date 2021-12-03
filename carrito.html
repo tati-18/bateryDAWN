@@ -9,16 +9,14 @@
     <meta content="Free Website Template" name="description" />
 
     <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon" />
+    <link rel="icon" type="image/x-icon" href="img/destello.png">
 
     <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800;900&display=swap"
-        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
 
     <!-- CSS Libraries -->
     <!-- CSS only -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
-        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet" />
     <link href="lib/flaticon/font/flaticon.css" rel="stylesheet" />
@@ -28,7 +26,7 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style_carrito.css" rel="stylesheet" />
-    </head>
+</head>
 
 <body>
     <!-- Nav Bar Start -->
@@ -44,7 +42,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item active" data-title="Inicio" data-intro="Aquí encontrará información general de Baterizate &#x26a1 ">
-                            <a href="index.html" class="nav-item nav-link active ">Inicio</a>
+                            <a href="index.html" class="nav-item nav-link ">Inicio</a>
                         </li>
                         <li class="nav-item" data-title="Catálogo" data-intro="Aquí encontrará las baterias que tenemos disponibles &#x1f4cb">
                             <a href="service.html" class="nav-item nav-link ">Catálogo</a>
@@ -75,102 +73,103 @@
         </nav>
     </div>
     <!-- Nav Bar End -->
-    
+
     <div class="container">
-          <div class="head">
+        <div class="head">
             <h1>Carrito de compras</h1>
-          </div>
+        </div>
         <!-- Cart Table -->
         <div class="row">
-          <div class="col-lg-12 table" >
-            <form id="cart-update-form" method="post" action="">
-              <div class="table-responsive">
-                <table class="table">
-                  <thead>
-                    <tr>
-                      <th>Producto</th>
-                      <th class="mob-hide"></th>
-                      <th class="mob-hide">Precio Unidad</th>
-                      <th class="table-qty">Cantidad</th>
-                      <th>Subtotal</th>
-                      <th></th>
-                    </tr>
-                  </thead>
-                  <tbody>
+            <div class="col-lg-12 table">
+                <form id="cart-update-form" method="post" action="">
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Producto</th>
+                                    <th class="mob-hide"></th>
+                                    <th class="mob-hide">Precio Unidad</th>
+                                    <th class="table-qty">Cantidad</th>
+                                    <th>Subtotal</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
 
-                </tbody>
-            </table>
-              </div>
-            <input type="hidden"></form>
-            <hr class="my-3">
-          </div>
-          <div class="col-lg-12 total">
-            <div class="row">          
-              <div class="col-12 cart-totals">
-                <table class="table table-striped">
-                  <tbody>
-                  <tr class="totals key">
-                    <td colspan="1" class="text-left"><strong>Total</strong></td>
-                    <td colspan="1" class="text-right"><strong></strong></td>
-                  </tr>
-      
-                </tbody></table>
-      
-                <div class="row text-center cart-actions">
-                  <div class="col-lg-6 col-md-6 actualizar">
-                    <a href="" class="btn btn-primary btn-block" title="Proceed to Checkout" onclick="activar()">Actualizar</a>
-                  </div>
-                  <div class="col-lg-6 col-md-6">
-                  <a href="" class="btn btn-primary btn-block" title="Proceed to Checkout">Procede a realizar la compra</a>
-                  </div>
-                  <a href="/" class="btn btn-link btn-block" title="← Continue Shopping">← Continue Shopping</a>
-                </div>
-              </div>
+                            </tbody>
+                        </table>
+                    </div>
+                    <input type="hidden"></form>
+                <hr class="my-3">
             </div>
-          </div>
-      
-    </div>  
+            <div class="col-lg-12 total">
+                <div class="row">
+                    <div class="col-12 cart-totals">
+                        <table class="table table-striped">
+                            <tbody>
+                                <tr class="totals key">
+                                    <td colspan="1" class="text-left"><strong>Total</strong></td>
+                                    <td colspan="1" class="text-right"><strong></strong></td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+
+                        <div class="row text-center cart-actions">
+                            <div class="col-lg-6 col-md-6 actualizar">
+                                <a class="btn btn-primary btn-block actualizar-compra" title="Proceed to Checkout">Actualizar</a>
+                            </div>
+                            <div class="col-lg-6 col-md-6 ">
+                                <a href=" " class="btn btn-primary btn-block " title="Proceed to Checkout ">Procede a realizar la compra</a>
+                            </div>
+                            <a href="/ " class="btn btn-link btn-block " title="← Continue Shopping ">← Continue Shopping</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </div>
 
     <!-- Footer Start -->
-    <div class="footer">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-4 col-md-6">
-                    <div class="footer-logo">
-                        <img src="img/logoBaterizate.png">
+    <div class="footer ">
+        <div class="container ">
+            <div class="row align-items-center ">
+                <div class="col-lg-4 col-md-6 ">
+                    <div class="footer-logo ">
+                        <img src="img/logoBaterizate.png ">
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="footer-link">
+                <div class="col-lg-4 col-md-6 ">
+                    <div class="footer-link ">
                         <h2>Mas información</h2>
                         <p>
-                            <i class="fa fa-map-marker-alt"></i>Duran - Cdl. Los Helechos, Mzn 5, V20.
+                            <i class="fa fa-map-marker-alt "></i>Duran - Cdl. Los Helechos, Mzn 5, V20.
                         </p>
-                        <p><i class="fa fa-phone-alt"></i>+593 99 421 8045</p>
-                        <p><i class="fa fa-envelope"></i>baterizate2021@gmail.com</p>
+                        <p><i class="fa fa-phone-alt "></i>+593 99 421 8045</p>
+                        <p><i class="fa fa-envelope "></i>baterizate2021@gmail.com</p>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="footer-social">
-                        <a class="btn" href=""><i class="fab fa-twitter"></i></a>
-                        <a class="btn" href=""><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn" href=""><i class="fab fa-youtube"></i></a>
-                        <a class="btn" href=""><i class="fab fa-instagram"></i></a>
-                        <a class="btn" href=""><i class="fab fa-linkedin-in"></i></a>
+                <div class="col-lg-4 col-md-6 ">
+                    <div class="footer-social ">
+                        <a class="btn " href=" "><i class="fab fa-twitter "></i></a>
+                        <a class="btn " href=" "><i class="fab fa-facebook-f "></i></a>
+                        <a class="btn " href=" "><i class="fab fa-youtube "></i></a>
+                        <a class="btn " href=" "><i class="fab fa-instagram "></i></a>
+                        <a class="btn " href=" "><i class="fab fa-linkedin-in "></i></a>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="container copyright">
+        <div class="container copyright ">
             <p>
-                &copy; <a href="#">Baterizate</a>, All Right Reserved. Designed By
-                <a href="https://htmlcodex.com">HTML Codex</a>
+                &copy; <a href="# ">Baterizate</a>, All Right Reserved. Designed By
+                <a href="https://htmlcodex.com ">HTML Codex</a>
             </p>
         </div>
     </div>
     <!-- Footer End -->
-    <script src="js/carrito.js"></script>
+    <script src="js/carrito.js "></script>
 </body>
 
 
