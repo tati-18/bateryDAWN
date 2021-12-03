@@ -3,16 +3,17 @@
 
 <head>
     <meta charset="utf-8">
-    <title>AutoWash - Car Wash Website Template</title>
+    <title>Batetizate</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="Free Website Template" name="keywords">
     <meta content="Free Website Template" name="description">
 
     <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+    <link rel="icon" type="image/x-icon" href="img/destello.png">
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
 
     <!-- CSS Libraries -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
@@ -28,56 +29,46 @@
 
 <body>
     <!-- Nav Bar Start -->
-    <div class="nav-bar">
-        <div class="container">
-            <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
-                <a class="navbar-brand" href="#">
-                        MENU
-                    </a>
-                <button class="navbar-toggler" data-target="#navbarCollapse" data-toggle="collapse" type="button">
-                        <span class="navbar-toggler-icon">
-                        </span>
-                    </button>
-                <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
-                    <div class="navbar-nav mr-auto">
-                        <a class="nav-item nav-link" href="index.html">
-                                Inicio
-                            </a>
-                        <a class="nav-item nav-link" href="about.html">
-                                Noticias
-                            </a>
-                        <a class="nav-item nav-link" href="service.html">
-                                Catalogos
-                            </a>
-                        <a class="nav-item nav-link active" href="price.html">
-                                Nosotros
-                            </a>
-                        <a class="nav-item nav-link" href="contact.html">
-                                Contactos
-                            </a>
-                    </div>
-                    <div class="ml-auto">
-                        <button class="btn btn-outline-secondary" type="button">
-                                <a class="text-decoration-none" href="login.html">
-                                    Iniciar Sesion
-                                </a>
-                                <i class="bi bi-person">
-                                </i>
-                            </button>
-                        <button class="btn btn-outline-secondary" onclick="location.href='carrito.html'" type="button">
-                                <span id="totalItems">
-                                    5
-                                </span>
-                                <i class="bi bi-cart4">
-                                </i>
-                                <span class="visually-hidden">
-                                    Carrito
-                                </span>
-                            </button>
+    <div class="nav-bar nav-sticky">
+        <nav class="navbar navbar-expand-md navbar-dark ">
+            <div class="container" data-title="Bienvenidos &#x26a1" data-intro="Hola, aquí te mostramos todas las secciones de nuestra página web &#x1f44b">
+                <img class="navbar-brand" src="img/logoBaterizate.png">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active" data-title="Inicio" data-intro="Aquí encontrará información general de Baterizate &#x26a1 ">
+                            <a href="index.html" class="nav-item nav-link  ">Inicio</a>
+                        </li>
+                        <li class="nav-item" data-title="Catálogo" data-intro="Aquí encontrará las baterias que tenemos disponibles &#x1f4cb">
+                            <a href="service.html" class="nav-item nav-link ">Catálogo</a>
+                        </li>
+                        <li class="nav-item" data-title="Nosotros" data-intro="Aquí encontrará información sobre los desarrolladores de nuestra página web &#x1f4bb ">
+                            <a href="price.html" class="nav-item nav-link active">Nosotros</a>
+                        </li>
+                        <li class="nav-item" data-title="Contáctanos" data-intro="Aquí podrás ponerte en contacto con nosotros &#x1f4cd &#x1f4e7">
+                            <a href="contact.html" class="nav-item nav-link">Contáctanos</a>
+                        </li>
+
+                    </ul>
+                    <div class=" my-2 my-lg-0">
+                        <button type="button" class="btn btn-outline-secondary" data-intro="Si eres un administrador, puedes ingresar aquí ">
+                            <a href="login.html" class="text-decoration-none">Iniciar Sesión</a>
+                            <i class="bi bi-person"></i>
+                        </button>
+
+                        <button type="button" class="btn btn-outline-secondary" onclick="location.href='carrito.html'" data-title="Carrito" data-intro="Visualiza tus productos">
+                            <span id="nav-cart-count" aria-hidden="true"
+                                class="nav-cart-count nav-cart-1 nav-progressive-attribute nav-progressive-content">1</span>
+                            <i class="bi bi-cart4"></i>
+                            <span class="visually-hidden">Carrito</span>
+                        </button>
                     </div>
                 </div>
-            </nav>
-        </div>
+            </div>
+        </nav>
     </div>
     <!-- Nav Bar End -->
 
@@ -226,9 +217,7 @@
                             <div class="down-content">
                                 <h4>Trabajo en Equipo</h4>
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur an adipisicing elit. Itaque, corporis nulla at quia quaerat.
-                                </p>
-                                <a href="#" class="filled-button">Leer más</a>
+                                    Puedes diseñar y crear, y construir el lugar más maravilloso del mundo, pero se necesita gente para hacer el sueño realidad </p>
                             </div>
                         </div>
                     </div>
@@ -240,9 +229,7 @@
                             <div class="down-content">
                                 <h4>Compromiso</h4>
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur an adipisicing elit. Itaque, corporis nulla at quia quaerat.
-                                </p>
-                                <a href="#" class="filled-button">Leer más</a>
+                                    Seamos parte vital de la organización, entregando el mayor esfuerzo al trabajo en equipo y a la satisfacción al cliente. </p>
                             </div>
                         </div>
                     </div>
@@ -254,9 +241,8 @@
                             <div class="down-content">
                                 <h4>Comunicación</h4>
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur an adipisicing elit. Itaque, corporis nulla at quia quaerat.
+                                    Tratemos a los demás como nos gustaría que nos traten a nosotros.
                                 </p>
-                                <a href="#" class="filled-button">Leer más</a>
                             </div>
                         </div>
                     </div>
@@ -279,10 +265,10 @@
                         <div class="footer-link">
                             <h2>Mas información</h2>
                             <p>
-                                <i class="fa fa-map-marker-alt"></i>Cdl. Los Helechos, Duran
+                                <i class="fa fa-map-marker-alt"></i>Duran - Cdl. Los Helechos, Mzn 5, V20.
                             </p>
                             <p><i class="fa fa-phone-alt"></i>+593 99 421 8045</p>
-                            <p><i class="fa fa-envelope"></i>baterizate2021@espol.edu.ec</p>
+                            <p><i class="fa fa-envelope"></i>baterizate2021@gmail.com</p>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6">

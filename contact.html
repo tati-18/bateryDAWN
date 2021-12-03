@@ -23,62 +23,57 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style_contactos.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bs-stepper/dist/css/bs-stepper.min.css">
+
 </head>
 
 <body>
 
     <!-- Nav Bar Start -->
-    <div class="nav-bar">
-        <div class="container">
-            <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
-                <a class="navbar-brand" href="#">
-                    MENU
-                </a>
-                <button class="navbar-toggler" data-target="#navbarCollapse" data-toggle="collapse" type="button">
-                    <span class="navbar-toggler-icon">
-                    </span>
+    <!-- Nav Bar Start -->
+    <div class="nav-bar nav-sticky">
+        <nav class="navbar navbar-expand-md navbar-dark ">
+            <div class="container" data-title="Bienvenidos &#x26a1" data-intro="Hola, aquí te mostramos todas las secciones de nuestra página web &#x1f44b">
+                <img class="navbar-brand" src="img/logoBaterizate.png">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
-                    <div class="navbar-nav mr-auto">
-                        <a class="nav-item nav-link " href="index.html">
-                            Inicio
-                        </a>
-                        <a class="nav-item nav-link" href="about.html">
-                            Noticias
-                        </a>
-                        <a class="nav-item nav-link" href="service.html">
-                            Catalogos
-                        </a>
-                        <a class="nav-item nav-link" href="price.html">
-                            Nosotros
-                        </a>
-                        <a class="nav-item nav-link active" href="contact.html">
-                            Contactos
-                        </a>
-                    </div>
-                    <div class="ml-auto">
-                        <button class="btn btn-outline-secondary" type="button">
-                            <a class="text-decoration-none" href="login.html">
-                                Iniciar Sesion
-                            </a>
-                            <i class="bi bi-person">
-                            </i>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active" data-title="Inicio" data-intro="Aquí encontrará información general de Baterizate &#x26a1 ">
+                            <a href="index.html" class="nav-item nav-link  ">Inicio</a>
+                        </li>
+                        <li class="nav-item" data-title="Catálogo" data-intro="Aquí encontrará las baterias que tenemos disponibles &#x1f4cb">
+                            <a href="service.html" class="nav-item nav-link ">Catálogo</a>
+                        </li>
+                        <li class="nav-item" data-title="Nosotros" data-intro="Aquí encontrará información sobre los desarrolladores de nuestra página web &#x1f4bb ">
+                            <a href="price.html" class="nav-item nav-link ">Nosotros</a>
+                        </li>
+                        <li class="nav-item" data-title="Contáctanos" data-intro="Aquí podrás ponerte en contacto con nosotros &#x1f4cd &#x1f4e7">
+                            <a href="contact.html" class="nav-item nav-link active">Contáctanos</a>
+                        </li>
+
+                    </ul>
+                    <div class=" my-2 my-lg-0">
+                        <button type="button" class="btn btn-outline-secondary" data-intro="Si eres un administrador, puedes ingresar aquí ">
+                            <a href="login.html" class="text-decoration-none">Iniciar Sesión</a>
+                            <i class="bi bi-person"></i>
                         </button>
-                        <button class="btn btn-outline-secondary" onclick="location.href='carrito.html'" type="button">
-                            <span id="totalItems">
-                                5
-                            </span>
-                            <i class="bi bi-cart4">
-                            </i>
-                            <span class="visually-hidden">
-                                Carrito
-                            </span>
+
+                        <button type="button" class="btn btn-outline-secondary" onclick="location.href='carrito.html'" data-title="Carrito" data-intro="Visualiza tus productos">
+                            <span id="nav-cart-count" aria-hidden="true"
+                                class="nav-cart-count nav-cart-1 nav-progressive-attribute nav-progressive-content">1</span>
+                            <i class="bi bi-cart4"></i>
+                            <span class="visually-hidden">Carrito</span>
                         </button>
                     </div>
                 </div>
-            </nav>
-        </div>
+            </div>
+        </nav>
     </div>
+    <!-- Nav Bar End -->
     <!-- Nav Bar End -->
 
     <!-- Header -->
@@ -147,6 +142,167 @@
         </div> 
     </div>
     <!-- Acerca de nosotros- boton End -->
+
+    <!-- <div class="Progreso">
+        <ul class="stepper horizontal" id="horizontal-stepper">
+            <li class="step active">
+              <div class="step-title waves-effect waves-dark">Step 1</div>
+              <div class="step-new-content">
+                <div class="row">
+                  <div class="md-form col-12 ml-auto">
+                    <input id="email-horizontal" type="email" class="validate form-control" required>
+                    <label for="email-horizontal">Email</label>
+                  </div>
+                </div>
+                <div class="step-actions">
+                  <button class="waves-effect waves-dark btn btn-sm btn-primary next-step" data-feedback="someFunction21">CONTINUE</button>
+                </div>
+              </div>
+            </li>
+            <li class="step">
+              <div class="step-title waves-effect waves-dark">Step 2</div>
+              <div class="step-new-content">
+                <div class="row">
+                  <div class="md-form col-12 ml-auto">
+                    <input id="password-horizontal" type="password" class="validate form-control" required>
+                    <label for="password-horizontal">Your password</label>
+                  </div>
+                </div>
+                <div class="step-actions">
+                  <button class="waves-effect waves-dark btn btn-sm btn-primary next-step" data-feedback="someFunction21">CONTINUE</button>
+                  <button class="waves-effect waves-dark btn btn-sm btn-secondary previous-step">BACK</button>
+                </div>
+              </div>
+            </li>
+            <li class="step">
+              <div class="step-title waves-effect waves-dark">Step 3</div>
+              <div class="step-new-content">
+                Finish!
+                <div class="step-actions">
+                  <button class="waves-effect waves-dark btn-sm btn btn-primary m-0 mt-4" type="button">SUBMIT</button>
+                </div>
+              </div>
+            </li>
+          </ul>    
+    </div> -->
+
+    <!--begin::Stepper-->
+
+    <div class="contacto">
+        <div class="container">
+                <div id="stepper1" class="bs-stepper">
+                    <div class="bs-stepper-header" role="tablist">
+                      <div class="step" data-target="#test-l-1">
+                        <button type="button" class="step-trigger" role="tab" id="stepper1trigger1" aria-controls="test-l-1">
+                          <span class="bs-stepper-circle">1</span>
+                          <span class="bs-stepper-label"></span>
+                        </button>
+                      </div>
+                      <div class="bs-stepper-line"></div>
+                      <div class="step" data-target="#test-l-2">
+                        <button type="button" class="step-trigger" role="tab" id="stepper1trigger2" aria-controls="test-l-2">
+                          <span class="bs-stepper-circle">2</span>
+                          <span class="bs-stepper-label"></span>
+                        </button>
+                      </div>
+                      <div class="bs-stepper-line"></div>
+                      <div class="step" data-target="#test-l-3">
+                        <button type="button" class="step-trigger" role="tab" id="stepper1trigger3" aria-controls="test-l-3">
+                          <span class="bs-stepper-circle">3</span>
+                          <span class="bs-stepper-label"></span>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="bs-stepper-content">
+                      <form class="needs-validation" onSubmit="return false" id="contactForm" name="sentMessage" novalidate="novalidate">
+                        <div id="test-l-1" role="tabpanel" class="bs-stepper-pane" aria-labelledby="stepper1trigger1">
+                            <div >
+                                <h1>Datos personales</h1>
+                            </div>
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col form-group">
+                                            <label for="exampleInputEmail1">Nombres</label>
+                                            <input class="form-control" data-validation-required-message="Por favor ingrese su nombre" id="nombre" placeholder="Sus nombres" required="required" type="text"/>
+                                          </div>
+                                          <div class="col form-group">
+                                            <label for="exampleInputEmail1">Apellidos</label>
+                                            <input class="form-control" data-validation-required-message="Por favor ingrese sus apellidos" id="apellido" placeholder="Sus apellidos" required="required" type="text"/>
+                                          </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">Fecha de Nacimiento</label>
+                                        <input class="form-control" data-validation-required-message="Por favor ingrese su nombre" id="fecha" placeholder="DD/MM/AAAA" required="required" type="date"/>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">Número de teléfono</label>
+                                        <input class="form-control" data-validation-required-message="Por favor ingrese su número" id="telefono" placeholder="**********" required="required" type="text"/>
+                                    </div>
+                                </div>
+                                <button id="botonNext1" class="btn btn-primary" type="submit" onclick="stepper1.next(this) ">Next</button>
+                            
+                            
+                          
+                        </div>
+                        <div id="test-l-2" role="tabpanel" class="bs-stepper-pane" aria-labelledby="stepper1trigger2">
+                            <div>
+                                <h1>Lugar de origen</h1>
+                            </div>
+                            <div class="container">
+                                <div class="form-group">
+                                    <label for="exampleInputPassword1">Provincia</label><div></div>
+                                    <select class="form-select">
+                                        <option value="1">Guayas</option> 
+                                        <option value="2">Santa Elena</option> 
+                                        <option value="3">Manabí</option>
+                                     </select>
+                                  </div>
+                                  <div class="form-group">
+                                    <label for="exampleInputPassword1">Ciudad</label><div></div>
+                                    <select class="form-select">
+                                        <option value="1">Guayaquil</option> 
+                                        <option value="2">Duran</option> 
+                                        <option value="3">Samborondón</option>
+                                        <option value="4">Yaguachi</option> 
+                                        <option value="5">Milagro</option> 
+                                        <option value="6">Daule</option>
+                                     </select>
+                                  </div>
+                            </div>
+                          
+                          <button class="btn btn-primary" onclick="stepper1.previous()">Previous</button>
+                          <button id="botonNext2" class="btn btn-primary" type="submit" onclick="stepper1.next(this)">Next</button>
+                        </div>
+                        <div id="test-l-3" role="tabpanel" class="bs-stepper-pane" aria-labelledby="stepper1trigger3">
+                            <div>
+                                <h1>Detalle</h1>
+                            </div>
+                            <div class="container">
+                                <div class="form-group">
+                                    <label for="exampleInputPassword1">Correo electronico</label><div></div>
+                                    <input class="form-control" data-validation-required-message="Por favor ingrese su correo" placeholder="Su correo electronico" required="required" type="email"/>
+                                  </div>
+                                  <div class="form-group">
+                                    <label for="exampleInputPassword1">Mensaje</label><div></div>
+                                    <textarea name="tuMensaje" id="msjDetalle" cols="103" rows="10" placeholder="Escribe tu mensaje aquí"></textarea>
+                                  </div>
+                            </div>
+                          <button class="btn btn-primary mt-5" onclick="stepper1.previous()">Previous</button>
+                          <button  id="botonNext3" type="submit" class="btn btn-primary mt-5" class="btn btn-custom" id="sendMessageButton">Submit</button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                
+            </div>
+        </div>
+    </div>
+
+    
+      
+      
+
+<!--end::Stepper-->
 
     <!-- Contact Start -->
     <div class="contact">
@@ -258,10 +414,10 @@
                     <div class="footer-link">
                         <h2>Mas información</h2>
                         <p>
-                            <i class="fa fa-map-marker-alt"></i>Cdl. Los Helechos, Duran
+                            <i class="fa fa-map-marker-alt"></i>Duran - Cdl. Los Helechos, Mzn 5, V20.
                         </p>
                         <p><i class="fa fa-phone-alt"></i>+593 99 421 8045</p>
-                        <p><i class="fa fa-envelope"></i>baterizate2021@espol.edu.ec</p>
+                        <p><i class="fa fa-envelope"></i>baterizate2021@gmail.com</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
@@ -294,6 +450,8 @@
         </div>
     </div>
     <!-- JavaScript Libraries -->
+    
+    <script src="./js/contact.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js">
     </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js">
@@ -314,4 +472,11 @@
     <!-- Template Javascript -->
     <script src="js/main.js">
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/bs-stepper/dist/js/bs-stepper.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="dist/js/bs-stepper.min.js"></script>
+
+
+</body>
 </html>

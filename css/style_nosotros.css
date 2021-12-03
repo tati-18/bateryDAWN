@@ -6,6 +6,14 @@
 
 /*******************************/
 
+img {
+    vertical-align: middle;
+    border-style: none;
+    width: 100%;
+    padding: 0 0 0 0;
+    color: #eeeeee;
+}
+
 body {
     color: #444444;
     font-weight: 400;
@@ -86,8 +94,12 @@ div.ml-auto {
 
 /**********************************/
 
+img.navbar-brand {
+    width: 12%;
+    padding: 0;
+}
+
 #totalItems {
-    position: absolute;
     top: 19px;
     right: -12px;
     height: 21px;
@@ -99,38 +111,15 @@ div.ml-auto {
     font-weight: bold;
     text-align: center;
     border-radius: 50%;
+    position: fixed;
 }
 
-.nav-bar {
-    position: relative;
+.navbar {
     background: #212529;
 }
 
 a.text-decoration-none {
     color: #ffffff
-}
-
-.nav-bar.nav-sticky {
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, .3);
-    z-index: 999;
-}
-
-.nav-bar .navbar {
-    padding: 20px 0;
-    background: #212529 !important;
-    transition: .3s;
-}
-
-.nav-bar.nav-sticky .navbar {
-    padding: 5px 0;
-}
-
-.nav-bar .nav-link {
-    color: white;
 }
 
 .navbar-dark .navbar-nav .nav-link,
@@ -161,73 +150,48 @@ a.text-decoration-none {
     box-shadow: inset 0 0 0 0 #dc3545;
 }
 
-.nav-bar .btn:hover {
+.navbar .btn:hover {
     color: #ffffff;
     background: #DC3536;
     box-shadow: inset 200px 0 0 0 #DC3536;
 }
 
-@media (min-width: 992px) {
-    .nav-bar .navbar-brand {
-        display: none;
+.nav-bar.nav-sticky {
+    position: fixed;
+    width: 101%;
+    top: -1%;
+    left: 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .3);
+    z-index: 999;
+}
+
+.navbar-collapse .my-2.my-lg-0 {
+    display: flex;
+    flex-direction: row;
+}
+
+
+/* Responsive layout - makes a one column layout instead of a two-column layout */
+
+@media (max-width: 768px) {
+    .navbar-collapse .my-2.my-lg-0 {
+        flex-direction: column;
+    }
+    .navbar-collapse .my-2.my-lg-0 button:first-child {
+        margin-bottom: 2px;
+    }
+    img.navbar-brand {
+        height: 54px;
+        width: 100px;
     }
 }
 
-@media (max-width: 991.98px) {
-    .navbar-dark .navbar-nav .nav-link,
-    .navbar-dark .navbar-nav .nav-link:focus,
-    .navbar-dark .navbar-nav .nav-link:hover,
-    .navbar-dark .navbar-nav .nav-link.active {
-        padding: 5px 0;
-    }
-    .nav-bar .dropdown-menu {
-        box-shadow: none;
-    }
-    .nav-bar .btn {
-        display: none;
-    }
+.navbar-collapse .my-2.my-lg-0 {
+    width: 300px;
 }
 
-
-/*******************************/
-
-
-/********* Contact-Heading CSS *********/
-
-
-/*******************************/
-
-.nosotros-heading {
-    background-image: url(../img/nosotros-heading.jpg);
-}
-
-.page-heading {
-    padding: 210px 0px 130px 0px;
-    text-align: center;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.page-heading .text-content h4 {
-    color: #E81C2E;
-    font-size: 50px;
-    text-transform: uppercase;
-    font-weight: 700;
-    margin-bottom: 50px;
-}
-
-.section-heading {
-    text-align: left;
-    margin-bottom: 30px;
-}
-
-.section-heading h2 {
-    font-size: 28px;
-    font-weight: 400;
-    font: Poppins, sans-serif 28px;
-    color: #1E1E1E;
-    margin-bottom: 15px;
+.navbar-collapse .my-2.my-lg-0 button:first-child {
+    margin-right: 2px;
 }
 
 
@@ -242,7 +206,6 @@ a.text-decoration-none {
 .team {
     position: relative;
     width: 100%;
-    padding: 25px 0 15px 0;
     background-color: #fff;
     margin-top: 100px;
 }
@@ -483,11 +446,12 @@ a.filled-button:hover {
 
 .footer {
     position: relative;
+    margin-top: 45px;
     padding-top: 90px;
-    background: #1E1E1E;
+    background: #212529;
 }
 
-.footer .footer-contact,
+.footer .footer-logo,
 .footer .footer-link,
 .footer .footer-newsletter {
     position: relative;
@@ -495,7 +459,12 @@ a.filled-button:hover {
     color: #ffffff;
 }
 
-.footer .footer-contact h2,
+.footer .footer-logo {
+    height: 150px;
+    width: 200px;
+}
+
+.footer .footer-logo h2,
 .footer .footer-link h2,
 .footer .footer-newsletter h2 {
     margin-bottom: 30px;
@@ -525,7 +494,7 @@ a.filled-button:hover {
     letter-spacing: 1px;
 }
 
-.footer .footer-contact p i {
+.footer .footer-logo p i {
     width: 25px;
 }
 
@@ -541,7 +510,7 @@ a.filled-button:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #202C45;
+    color: #212529;
     background: #ffffff;
     border-radius: 40px;
     margin-right: 5px;
@@ -579,7 +548,7 @@ a.filled-button:hover {
 
 .footer .footer-newsletter .btn.btn-custom {
     width: 100%;
-    color: #202C45;
+    color: #212529;
     background: #ffffff;
     box-shadow: inset 0 0 0 0 #E81C2E;
 }
@@ -591,7 +560,7 @@ a.filled-button:hover {
 }
 
 .footer .copyright {
-    text-align: center;
+    text-align: left;
     padding-top: 15px;
     padding-bottom: 45px;
 }

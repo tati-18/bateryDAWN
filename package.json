@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "bs-stepper": "^1.7.0",
     "intro.js": "^4.3.0"
   }
 }
