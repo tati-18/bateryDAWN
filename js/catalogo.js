@@ -15,7 +15,7 @@ function cambiohtml(producto) {
             <h4>${producto.nombre}</h4>
             <span>${producto.precio}</span>
             <div class="descripcion row">
-                <p class="col-12">Caracteristicas:</p>
+                <p class="col-12">Características:</p>
                 <p class="col-12">${producto.caracteristicas[0]}</p>
                 <p class="col-12">${producto.caracteristicas[1]}</p>
                 <p class="col-12">${producto.caracteristicas[2]}</p>
@@ -129,7 +129,6 @@ let cambiocatalogo = () => {
             cambioproductos(a);
         })
     }
-
 }
 cambiocatalogo()
 
