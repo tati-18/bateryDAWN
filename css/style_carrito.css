@@ -508,6 +508,10 @@ margin-bottom: 1rem;
     display: none;
 }
 }
+@media (max-width: 767px){
+.container .row .total  .cart-totals .row .actualizar{
+ margin-bottom: 2%;
+}}
 
 
 /*******************************/
